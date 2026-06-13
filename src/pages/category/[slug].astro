@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { toolsByCategory } from '../../data/tools';
+import { CATEGORY_META } from '../../data/types';
+
+export function getStaticPaths() {
+  return Object.keys(CATEGORY_META).map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const meta = CATEGORY_META[slug];
+const tools = (toolsByCategory[slug] ?? []).sort((a, b) => b.rating - a.rating);
+const activeTools = tools.filter(t => t.status === 'active');
+const freeTools = tools.filter(t => t.pricing === 'free');
+const allCaps = [...new Set(tools.flatMap(t => t.capabilities))].sort();
+---
+
+<Layout
+  title={`${meta.label} — Free AI Tools — FreeLM`}
+  description={`Discover ${tools.length} free ${meta.label.toLowerCase()} AI tools. ${meta.description}`}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 pb-20">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs mb-8" style="color: var(--text-muted);" data-motion="left">
+      <a href="/" class="hover:underline transition-colors" style="color: var(--text-muted);">Home</a>
+      <span>/</span>
+      <a href="/categories" class="hover:underline" style="color: var(--text-muted);">Categories</a>
+      <span>/</span>
+      <span style="color: var(--text-secondary);">{meta.label}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row sm:items-center gap-5 mb-9" data-motion="up">
+      <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl relative overflow-hidden shrink-0"
+           style={`background: ${meta.gradient}; border: 1px solid var(--border-default);`}>
+        {meta.icon}
+        <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 55%);"></div>
+      </div>
+      <div>
+        <h1 class="text-3xl font-bold mb-1.5" style="color: var(--text-primary); letter-spacing: -0.03em;">{meta.label}</h1>
+        <p class="max-w-xl text-sm leading-relaxed mb-3" style="color: var(--text-tertiary);">{meta.description}</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">{tools.length} tools</span>
+          <span class="pill" style="background:rgba(22,163,74,0.1);color:#16a34a;border-color:rgba(22,163,74,0.2);">{freeTools.length} free</span>
+          <span class="pill">{activeTools.length} active</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Capability filter chips -->
+    {allCaps.length > 0 && (
+      <div class="mb-6" data-motion="up">
+        <p class="text-xs font-semibold uppercase tracking-wider mb-3" style="color: var(--text-muted);">Filter by capability</p>
+        <div class="flex flex-wrap gap-2" id="cap-filters">
+          <button class="cap-chip pill pill-accent" data-cap="all">All</button>
+          {allCaps.map(cap => (
+            <button class="cap-chip pill cursor-pointer transition-all duration-150 hover:border-accent-600/50" data-cap={cap}>
+              {cap.replace(/-/g, ' ')}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Grid -->
+    <div id="cat-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 stagger-grid">
+      {tools.map((tool) => (
+        <div class="cat-tool-item" data-caps={tool.capabilities.join('|')}>
+          <ToolCard tool={tool} />
+        </div>
+      ))}
+    </div>
+
+    <!-- Related categories -->
+    <div class="mt-14" data-motion="up">
+      <h2 class="text-lg font-semibold mb-4" style="color: var(--text-primary);">Other Categories</h2>
+      <div class="flex flex-wrap gap-2">
+        {Object.values(CATEGORY_META).filter(m => m.id !== slug).map(m => (
+          <a href={`/category/${m.id}`} class="pill flex items-center gap-1.5 py-1.5 px-3 transition-all duration-150 cursor-pointer"
+             onmouseover="this.classList.add('pill-accent')" onmouseout="this.classList.remove('pill-accent')">
+            {m.icon} {m.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const chips = document.querySelectorAll('.cap-chip');
+  const items = document.querySelectorAll('.cat-tool-item');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => { c.classList.remove('pill-accent'); c.classList.add('pill'); });
+      chip.classList.remove('pill');
+      chip.classList.add('pill-accent');
+      const cap = chip.dataset.cap || 'all';
+      items.forEach(item => {
+        item.style.display = cap === 'all' || (item.dataset.caps||'').split('|').includes(cap) ? '' : 'none';
+      });
+    });
+  });
+</script>

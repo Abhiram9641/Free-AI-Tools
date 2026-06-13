@@ -1,0 +1,414 @@
+[
+  {
+    "name": "Freebuff",
+    "url": "https://freebuff.ai",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Free, ad-supported AI coding agent for the terminal. Built on the Codebuff multi-agent platform. No subscription, credits, or config needed.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "DeepSeek V4 Pro",
+      "DeepSeek V4 Flash",
+      "Kimi K2.6",
+      "MiniMax M2.7",
+      "Gemini 3.1 Flash Lite"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "web-research"
+    ],
+    "pricing": "free",
+    "login_type": "none",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "unlimited",
+      "rate_limits": "Ad-supported — shows occasional text ads in CLI. No token/credit quotas found. Country availability may be restricted.",
+      "notes": "Genuinely free with no hard caps. Supported by text ads from developer-tool sponsors. No tracking or telemetry on code. Optional: connect paid ChatGPT for GPT-5.4 deep thinking."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "cli",
+      "coding-agent",
+      "free",
+      "terminal",
+      "ad-supported",
+      "multi-agent"
+    ],
+    "notes": "Free variant of Codebuff (YC F24). Uses 9 specialized subagents (file picker, code reviewer, browser use, planner, editor). Built by Codebuff team. Apache-2.0. GitHub: 6.3k stars. npm: 11k+ weekly downloads. Slash commands: /interview, /plan, /review, /deploy, /bash.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Gemini CLI",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Google's open-source AI agent that brings Gemini models into your terminal for coding, automation, and complex task execution with a ReAct loop.",
+    "screenshot": "",
+    "models_count": 3,
+    "top_models": [
+      "Gemini 3 Flash",
+      "Gemini 3.1 Flash-Lite",
+      "Gemini 2.5 Flash"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "debugging"
+    ],
+    "pricing": "freemium",
+    "login_type": "google/oauth",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "1,000 (OAuth) / 1,500 (API key Flash models)",
+      "free_requests_per_month": "30,000 (OAuth) / 45,000 (API key Flash)",
+      "rate_limits": "OAuth: 60 RPM / 1,000 RPD. API key: 10 RPM, 250K TPM, 1,500 RPD (Gemini 3 Flash); 15 RPM, 250K TPM, 1,000 RPD (3.1 Flash-Lite).",
+      "notes": "CLI OAuth free tier separate from API key free tier. Flash models only on free — Pro/Ultra require paid. Enabling billing on API key removes free tier on that project."
+    },
+    "status": "active (free tier deprecated — migrating to Antigravity by June 18, 2026)",
+    "rating": 4,
+    "tags": [
+      "google",
+      "gemini",
+      "cli",
+      "ai-coding",
+      "terminal"
+    ],
+    "notes": "CRITICAL: Deprecated for free/individual users. Stops serving free tier, AI Pro, and Ultra requests June 18, 2026. Migrate to Antigravity. Enterprise (Standard/Enterprise) remains supported. Open source (Apache 2.0, 105K+ GitHub stars). Features: MCP, plan mode, Google Search grounding, web fetch, checkpointing.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Antigravity",
+    "url": "https://antigravity.google",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Google's agent-first development platform with CLI (agy), VS Code fork IDE, and SDK — powered by Gemini 3.5 Flash with autonomous multi-agent orchestration. Successor to Gemini CLI.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "Gemini 3.1 Pro",
+      "Gemini 3 Flash",
+      "Claude Sonnet 4.6",
+      "Claude Opus 4.6",
+      "GPT-OSS 120B"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "chat"
+    ],
+    "pricing": "freemium",
+    "login_type": "google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "20",
+      "free_requests_per_month": "~600",
+      "rate_limits": "20 agent requests/day (~5 hour refresh). 5 requests/minute. Tab completions and basic editor features unlimited.",
+      "notes": "Free tier cut ~92% from original 250 req/day. No credit card required. All 5 models available on free tier but heavily rate-limited. Compute-based usage replacing daily limits."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "google",
+      "antigravity",
+      "cli",
+      "ide",
+      "ai-coding",
+      "terminal",
+      "gemini-cli-replacement"
+    ],
+    "notes": "Direct successor to Gemini CLI — free tier stops June 18, 2026. Three surfaces: Desktop App (VS Code fork), CLI (agy, Go-based closed-source), SDK. Launched Nov 2025, v2.0 at Google I/O May 2026. Paid: AI Pro $20/mo, AI Ultra $249.99/mo. Pay-as-you-go AI credits: $25 for 2,500 credits.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Kiro",
+    "url": "https://kiro.dev",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "AWS/Amazon's agentic AI IDE and CLI for spec-driven development, code generation, and autonomous agentic coding. Evolved from Amazon Q Developer CLI.",
+    "screenshot": "",
+    "models_count": 6,
+    "top_models": [
+      "Claude Sonnet 4.5",
+      "Claude Sonnet 4.0",
+      "DeepSeek 3.2",
+      "MiniMax M2.1",
+      "Qwen3 Coder Next"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "spec-driven-development",
+      "mcp-support"
+    ],
+    "pricing": "freemium",
+    "login_type": "google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (credit-based)",
+      "free_requests_per_month": "50 credits per month (credit-based, not request-based)",
+      "rate_limits": "50 credits/month. Simple prompts use <1 credit, complex tasks use more. Overage $0.04/credit.",
+      "notes": "Free tier includes Claude Sonnet 4.5 and open weight models (Qwen3 Coder Next, DeepSeek v3.2, MiniMax M2.1). Paid: Pro $20/mo (1000 credits), Pro+ $40/mo (2000 credits), Power $200/mo (10000 credits)."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "aws",
+      "amazon",
+      "cli",
+      "agentic-ide",
+      "spec-driven-development",
+      "code-generation",
+      "mcp",
+      "terminal"
+    ],
+    "notes": "AWS product evolved from Amazon Q Developer CLI. Open source (GitHub: kirodotdev/Kiro, 3.9k stars). No AWS account needed for basic use. NOT related to Kilo Code. CLI install: curl -fsSL https://cli.kiro.dev/install | bash.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Kilo CLI",
+    "url": "https://kilo.ai/cli",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Open-source AI coding agent for the terminal. CLI component of the Kilo Code platform with 500+ models, agentic coding, and file editing.",
+    "screenshot": "",
+    "models_count": 500,
+    "top_models": [
+      "GLM 4.7",
+      "MiniMax M2.1"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation"
+    ],
+    "pricing": "freemium",
+    "login_type": "email",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "unlimited",
+      "rate_limits": "Free models limited to upstream provider rate limits. User-configurable in settings.",
+      "notes": "Free models via Auto Free (kilo-auto/free) tier. No credit card required. BYOK also free. Credits only needed for paid models via Kilo Gateway."
+    },
+    "status": "active",
+    "rating": 4.7,
+    "tags": [
+      "cli",
+      "ai-coding",
+      "kilo",
+      "terminal"
+    ],
+    "notes": "CLI component of Kilo Code platform (VS Code + JetBrains + CLI + Cloud + Slack). Same engine as extension. Built on OpenCode by SST (MIT). Apache 2.0. npm: @kilocode/cli. Free tier includes unlimited usage of select free models.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Codex CLI",
+    "url": "https://github.com/openai/codex",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "OpenAI's open-source, Rust-built terminal-based coding agent that reads, edits, and runs code locally with OS-level sandboxing.",
+    "screenshot": "",
+    "models_count": 4,
+    "top_models": [
+      "GPT-5.5",
+      "GPT-5.4",
+      "GPT-5.4-mini",
+      "GPT-5.3-codex-spark"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "debugging",
+      "web-search",
+      "mcp-support"
+    ],
+    "pricing": "freemium",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "limited (ChatGPT Free plan)",
+      "free_requests_per_month": "limited (ChatGPT Free plan — very limited Codex access)",
+      "rate_limits": "ChatGPT Free: very limited. Plus: 15-80 GPT-5.5 msgs/5h. Pro 5x: 80-400/5h. API key: usage-based pricing. No specific Codex limits published separately.",
+      "notes": "ChatGPT Free plan includes limited Codex access. No free API credits specifically for Codex — standard $5 new account free credits apply for API key auth."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "openai",
+      "codex",
+      "cli",
+      "ai-coding",
+      "terminal",
+      "rust",
+      "open-source"
+    ],
+    "notes": "Open source (Apache-2.0), 90k+ GitHub stars. Requires ChatGPT account or OpenAI API key. Built in Rust. Sandbox: Seatbelt (macOS), Bubblewrap+Landlock (Linux), AppContainer (Windows). Features: web search, MCP, skills, plugins, subagents. Available on macOS, Linux, Windows.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Plandex",
+    "url": "https://plandex.ai",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Open source, terminal-based AI coding agent designed for large tasks, large files, and large projects with a plan-and-execute approach and 2M token context window.",
+    "screenshot": "",
+    "models_count": 400,
+    "top_models": [
+      "Gemini 2.5 Flash (Google AI Studio free tier)",
+      "DeepSeek R1 (OpenRouter free tier)",
+      "Llama 4 Maverick (OpenRouter free tier)",
+      "Qwen 3 (OpenRouter free tier)",
+      "Ollama local models (free, offline)"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "git-integration"
+    ],
+    "pricing": "free",
+    "login_type": "none",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "BYOK unlimited (depends on provider)",
+      "free_requests_per_month": "BYOK unlimited (depends on provider)",
+      "rate_limits": "No Plandex-imposed limits. OpenRouter free models have rate limits. Google AI Studio free tier ~60 req/min. Ollama local unlimited.",
+      "notes": "Fully open source (MIT). Cloud service shut down Nov 2025. Now self-hosted/BYOK only. Use OpenRouter free tier, Google AI Studio, or Ollama for zero cost."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "plandex",
+      "cli",
+      "terminal",
+      "open-source",
+      "agent",
+      "plan-and-execute",
+      "byok"
+    ],
+    "notes": "Open source (MIT, 15.2k GitHub stars, Go). Written by Dane (danenania). Cloud service shut down Nov 2025 — self-hosted only. Key differentiator: 'plan and execute' — breaks tasks into sequential steps, summarizes context between steps. Cumulative diff review sandbox. 2M token context. Model pack system routes different roles to different models.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Mentat",
+    "url": "https://mentat.ai",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "AI coding assistant originally a terminal CLI tool, now pivoted to a cloud-native GitHub bot agent that reviews PRs, fixes CI, and resolves merge conflicts.",
+    "screenshot": "",
+    "models_count": 2,
+    "top_models": [
+      "GPT-4",
+      "Claude"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "code-review",
+      "test-generation"
+    ],
+    "pricing": "freemium",
+    "login_type": "api_key",
+    "referrals": "unknown",
+    "free_tier_limits": {
+      "free_requests_per_day": "BYOK unlimited (original CLI)",
+      "free_requests_per_month": "3,000 free credits (~$30) for new cloud users",
+      "rate_limits": "Usage-based. 19.5% margin on API costs. 3000 free credits for new cloud users.",
+      "notes": "Original CLI (v1.0.18, Apr 2024) was free/open-source BYOK. Now pivoted to cloud GitHub bot. CLI repo archived."
+    },
+    "status": "active (pivoted to cloud)",
+    "rating": 3,
+    "tags": [
+      "mentat",
+      "cli",
+      "terminal",
+      "ai-coding",
+      "github-bot"
+    ],
+    "notes": "By AbanteAI. Started as open-source Python CLI (PyPI: mentat) using GPT-4 with multi-file editing, RAG auto-context, and universal-ctags. Last CLI release v1.0.18 (Apr 2024). Pivoted to cloud GitHub bot (github.com/apps/mentatbot) — PR review, CI/CD fix, merge conflict resolution. 50k+ repos installed. Original CLI archived.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Opencode",
+    "url": "https://opencode.ai",
+    "category": "cli_coding_agent",
+    "sub_category": "terminal-agent",
+    "description": "Open source AI coding agent that runs in terminal, desktop, or IDE. Supports 75+ LLM providers via BYOK with free models included.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "DeepSeek V4 Flash Free",
+      "Big Pickle",
+      "MiMo-V2.5 Free",
+      "North Mini Code Free",
+      "Nemotron 3 Ultra Free"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "multi-session",
+      "lsp-integration",
+      "mcp-support"
+    ],
+    "pricing": "free",
+    "login_type": "none",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "unlimited",
+      "autocomplete_suggestions": "n/a",
+      "chat_messages": "unlimited",
+      "rate_limits": "None on tool itself; depends on chosen provider's API limits.",
+      "notes": "100% free and open source (MIT). Free Zen models available for limited time. Must BYOK for paid providers. Zen pay-as-you-go ($20+) and Go subscription ($10/mo) are optional."
+    },
+    "status": "active",
+    "rating": 4.5,
+    "tags": [
+      "ai-coding-agent",
+      "open-source",
+      "cli",
+      "terminal",
+      "developer-tools",
+      "code-generation",
+      "llm",
+      "vscode-extension"
+    ],
+    "notes": "100% open source (MIT). TypeScript. 173k+ GitHub stars, 7.5M monthly devs, 900+ contributors. Available as terminal TUI, desktop app (beta), and VS Code/IDE extension. Features Plan mode (read-only) and Build mode (full access), LSP integration, MCP support, multi-session agents. Latest v1.17.3 (Jun 10 2026). Built by Anomaly.",
+    "last_verified": "2026-06-10"
+  }
+]

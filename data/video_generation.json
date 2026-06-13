@@ -1,0 +1,386 @@
+{
+  "category": "video_generation",
+  "last_updated": "2026-06-10",
+  "tools": [
+    {
+      "name": "Creen AI",
+      "url": "https://creen.ai",
+      "category": "video_generation",
+      "sub_category": "video-creator",
+      "description": "Unified creative studio with 40+ frontier models for AI video, image, and audio generation. Free and unlimited on select models, no sign up required.",
+      "screenshot": "",
+      "models_count": 28,
+      "top_models": [
+        "Seedance 2.0",
+        "Kling V3",
+        "Hailuo 02",
+        "Wan 2.7",
+        "Vidu Q3",
+        "Grok Imagine Video",
+        "HappyHorse 1.0"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "text-to-image",
+        "audio-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "none",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_videos_per_day": "unlimited on select models",
+        "free_videos_per_month": "unlimited on select models",
+        "video_duration": "10 seconds",
+        "free_credits": "N/A (no credits on free)",
+        "rate_limits": "not specified. 1080p output. No watermark on select tiers.",
+        "notes": "46 total models: 28 video, 11 image, 7 audio. Premium models (Sora 2 Pro, Veo 3.1) require credits. Pro $29/mo."
+      },
+      "status": "active",
+      "rating": 4.5,
+      "tags": [
+        "video-generation",
+        "multi-model",
+        "no-sign-up",
+        "free"
+      ],
+      "notes": "Company: CODESAIL LIMITED (HK). iOS and Android apps. Paid: Pro $29/mo, Max, Ultra. Credit packs $10-600/mo.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Free.ai",
+      "url": "https://free.ai/video/",
+      "category": "video_generation",
+      "sub_category": "video-creator",
+      "description": "Free AI video generator creating short 2-6 second clips from text or images. Part of Free.ai's 400+ tool platform.",
+      "screenshot": "",
+      "models_count": 3,
+      "top_models": [
+        "CogVideoX (Apache 2.0)",
+        "Wan 2.2 TI2V-5B (Apache 2.0)",
+        "HunyuanVideo 1.5"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "camera-motion-control",
+        "style-presets"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - 30,000 bonus tokens per referral (both sides).",
+      "free_tier_limits": {
+        "free_videos_per_day": "1 video clip",
+        "free_videos_per_month": "~30",
+        "video_duration": "2-6 seconds",
+        "free_credits": "2,500 tokens/day (anon), 30,000/day (signed up)",
+        "rate_limits": "4s video costs ~10,000 tokens. Also: 2 music tracks/day, 5 images/day on free.",
+        "notes": "Self-hosted models on token pool. Premium (Kling, Runway, Veo, Sora) need paid tokens. Token packs from $5/200K."
+      },
+      "status": "active",
+      "rating": 3.3,
+      "tags": [
+        "video-generation",
+        "text-to-video",
+        "open-source",
+        "free-tier",
+        "no-watermark"
+      ],
+      "notes": "Part of Free.ai platform with 400+ tools. 13+ video sub-tools: Movie Generator, Shorts, Avatar, VFX, etc. API available.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Google AI Studio",
+      "url": "https://aistudio.google.com",
+      "category": "video_generation",
+      "sub_category": "multimodal-studio",
+      "description": "Google's browser-based IDE for prototyping with Gemini models. Video generation via Veo is strictly paid — no free tier.",
+      "screenshot": "",
+      "models_count": 6,
+      "top_models": [],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "video-with-audio"
+      ],
+      "pricing": "paid",
+      "login_type": "google",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_videos_per_day": "0",
+        "free_videos_per_month": "0",
+        "video_duration": "up to 8s per clip (paid)",
+        "free_credits": "0 (Veo requires paid project with $10 minimum)",
+        "rate_limits": "No free tier for video generation. AI Studio UI free for text/image only.",
+        "notes": "Veo 3.1 pricing: Standard $0.40/s, Fast $0.10/s, Lite $0.05/s. 720p to 4K per-second billing."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "google",
+        "veo",
+        "video-generation",
+        "paid-only"
+      ],
+      "notes": "6 Veo models (all paid): 3.1 Standard/Fast/Lite, 3 Standard/Fast, 2. Free trial discontinued. $300 GCP trial excludes Gemini API.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Upsampler",
+      "url": "https://upsampler.com",
+      "category": "video_generation",
+      "sub_category": "video-creator",
+      "description": "All-in-one AI platform for video generation (text-to-video, image-to-video) and video upscaling, with free no-sign-up tier.",
+      "screenshot": "",
+      "models_count": 18,
+      "top_models": [
+        "Wan 2.2 5B Fast",
+        "Wan 2.2 14B (Pro)",
+        "LTX 2 Distilled Turbo"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "video-upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "none",
+      "referrals": "yes - affiliate program via FirstPromoter: 30% commission on subscriptions, 10% on credit purchases.",
+      "free_tier_limits": {
+        "free_videos_per_day": "limited (exact number not published)",
+        "free_videos_per_month": "limited (not published)",
+        "free_upscales_per_day": "limited (not published)",
+        "rate_limits": "Free upscaler: max 10s, 720p, 50MB per upload. No sign-up required. No watermark.",
+        "notes": "18 total video models behind platform, 3 on free no-sign-up tier. Paid: Starter (pay-per-credit), Pro $15/mo, Premium $30/mo."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "video-generation",
+        "video-upscaling",
+        "free",
+        "no-sign-up"
+      ],
+      "notes": "Also offers image gen (42 models), image upscale (6), image restore (17), image edit (24). Credits system for paid tiers.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Vidou.ai",
+      "url": "https://vidou.ai",
+      "category": "video_generation",
+      "sub_category": "video-creator",
+      "description": "Free browser-based AI tool that transforms static images into short dynamic videos. No login, no watermark, unlimited generations.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "Vidou proprietary model"
+      ],
+      "capabilities": [
+        "image-to-video",
+        "text-to-video",
+        "text-to-image"
+      ],
+      "pricing": "freemium",
+      "login_type": "none",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_videos_per_day": "unlimited",
+        "free_videos_per_month": "unlimited",
+        "video_duration": "5 seconds",
+        "free_credits": "unlimited",
+        "rate_limits": "none advertised. 720p output. No watermark. No login required.",
+        "notes": "Truly free image-to-video and text-to-video. Paid credits ($15.99-69.99) unlock faster speed and 7-day file storage."
+      },
+      "status": "active",
+      "rating": 3.5,
+      "tags": [
+        "free",
+        "no-login",
+        "image-to-video",
+        "no-watermark",
+        "unlimited"
+      ],
+      "notes": "NOT the same as Vidu AI (vidu.com). Separate tool registered Nov 2025. 5s 720p clips. Privacy-first, browser-based processing.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Kling",
+      "url": "https://klingai.com",
+      "category": "video_generation",
+      "sub_category": "ai-creative-studio",
+      "description": "AI video platform by Kuaishou offering text-to-video, image-to-video, and multimodal tools with native audio and lip-sync.",
+      "screenshot": "",
+      "models_count": 9,
+      "top_models": [
+        "Kling 1.6 Standard",
+        "Kling 2.5 Standard",
+        "Kling 2.5 Turbo",
+        "Kling 2.6 Standard",
+        "Kling O1 Omni Standard",
+        "Kling 3.0 Standard"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "video-editing",
+        "motion-control",
+        "lip-sync",
+        "native-audio"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - affiliate/referral program available.",
+      "free_tier_limits": {
+        "free_videos_per_day": "~2-6 (66 credits; 33 credits per 5s 720p video)",
+        "free_videos_per_month": "N/A (credits reset daily, no rollover)",
+        "video_duration": "5 seconds",
+        "free_credits": "66/day",
+        "rate_limits": "Standard queue. 30-40% failure rate peak hours. Watermarked. 720p max on free.",
+        "notes": "Free credits reduced from 166 to 66/day. Image-to-video and camera controls available on free. Free outputs watermarked."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "video-generation",
+        "text-to-video",
+        "kuaishou",
+        "lip-sync"
+      ],
+      "notes": "Kling 3.0 (Feb 2026) supports up to 4K, 15s, multi-shot (6 cuts), native audio in 5 languages. Revenue run rate exceeded $100M in Mar 2025.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Meta AI Vibes",
+      "url": "https://www.meta.ai/vibes",
+      "category": "video_generation",
+      "sub_category": "video-creator",
+      "description": "Meta's free AI video generation tool to create, remix, and share short-form AI videos by animating images, text prompts, lip sync, and restyling.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "Meta Imagine/Movie Gen (internal)"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "video-remixing",
+        "lip-sync",
+        "voiceover",
+        "restyling",
+        "music-addition"
+      ],
+      "pricing": "free",
+      "login_type": "email",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_videos_per_day": "unlimited",
+        "free_videos_per_month": "unlimited",
+        "video_duration": "short-form (under 60s)",
+        "free_credits": "unlimited",
+        "rate_limits": "None documented publicly. Region-locked.",
+        "notes": "Completely free as of June 2026. No paid tier announced. Requires Meta/Facebook/Instagram account."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "meta",
+        "video-generation",
+        "free",
+        "short-form",
+        "remix",
+        "lip-sync"
+      ],
+      "notes": "Launched Sep 2025. Available as standalone Vibes app on Google Play (1M+ downloads). Desktop web version in development. Cross-post to Instagram/Facebook Stories.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Rewind",
+      "url": "https://rewind.ai/video/",
+      "category": "video_generation",
+      "sub_category": "multi-model-video-generator",
+      "description": "Free AI video generator with 13 video models (Wan 2.6, Seedance, Veo 3.1, Kling, Sora 2 Pro, Hailuo). No sign-up, no watermark, commercial use OK.",
+      "screenshot": "",
+      "models_count": 13,
+      "top_models": [
+        "Wan 2.6",
+        "Wan 2.7",
+        "Seedance 1.5 Pro",
+        "Seedance 2.0",
+        "Veo 3.1",
+        "Kling Video v3.0 Pro",
+        "Hailuo 2.3"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video",
+        "audio-to-video",
+        "video-style-transfer",
+        "camera-motion-control"
+      ],
+      "pricing": "freemium",
+      "login_type": "none",
+      "referrals": "yes - both users get bonus credits on referral.",
+      "free_tier_limits": {
+        "free_videos_per_day": "unlimited (token-gated)",
+        "free_videos_per_month": "unlimited (token-gated)",
+        "video_duration": "2-15 seconds",
+        "free_credits": "2,500 tokens/day (anon) / 5,000/day (signed up) + 10,000 signup bonus",
+        "rate_limits": "Tokens reset every 24h. Each gen costs ~100-5000 tokens. No watermark. Commercial use permitted.",
+        "notes": "Self-hosted models (Wan 2.6) use fewer tokens. Premium models (Seedance, Veo 3.1) cost more but still free with daily tokens."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "video-generation",
+        "multi-model",
+        "free",
+        "no-sign-up",
+        "no-watermark"
+      ],
+      "notes": "Part of Rewind.ai platform (400+ tools, 437 models). All 13 models accessible via free daily tokens. MP4 up to 1080p. Token packs from $5.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Google Flow",
+      "url": "https://labs.google/fx/tools/flow",
+      "category": "video_generation",
+      "sub_category": "creative-studio",
+      "description": "Google's AI creative studio for images and videos using Nano Banana Pro and Veo 3.1. Free with 50 daily credits for video.",
+      "screenshot": "",
+      "models_count": 2,
+      "top_models": [
+        "Veo 3.1"
+      ],
+      "capabilities": [
+        "text-to-video",
+        "image-to-video",
+        "frames-to-video",
+        "video-extension",
+        "custom-tool-building"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_videos_per_day": "unlimited (image) / 50 daily credits (video)",
+        "free_videos_per_month": "unlimited (image) / ~1500 (video)",
+        "video_duration": "varies (5-10 secs per gen)",
+        "free_credits": "50 daily credits (for Veo 3.1 video only)",
+        "rate_limits": "Credits expire daily. No watermarks. Image gen unlimited and free.",
+        "notes": "Image generation is UNLIMITED and free with Nano Banana Pro. 50 daily credits only for video. One-time 100 welcome credits."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "google",
+        "video-generation",
+        "free-tier",
+        "veo-3.1",
+        "nano-banana"
+      ],
+      "notes": "Replaced Whisk AI and ImageFX April 2026. 140+ countries. Paid: AI Plus $4.99/mo (200 credits), AI Pro $19.99/mo (1K credits).",
+      "last_verified": "2026-06-10"
+    }
+  ]
+}

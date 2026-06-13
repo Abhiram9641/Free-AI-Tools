@@ -1,0 +1,362 @@
+{
+  "category": "music_generation",
+  "last_updated": "2026-06-10",
+  "tools": [
+    {
+      "name": "Suno",
+      "url": "https://suno.com",
+      "category": "music_generation",
+      "sub_category": "music_creator",
+      "description": "Leading AI music generator that creates complete songs with vocals, lyrics, and full production from a single text prompt in under a minute.",
+      "screenshot": "",
+      "models_count": 5,
+      "top_models": [
+        "v4.5-all"
+      ],
+      "capabilities": [
+        "music-generation",
+        "lyrics-generation",
+        "vocal-gen",
+        "remix",
+        "stem-separation",
+        "voice-cloning",
+        "studio-daw"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - invite friends to join the community.",
+      "free_tier_limits": {
+        "free_songs_per_day": "10",
+        "free_songs_per_month": "300",
+        "song_duration": "120s (up to 240s with extensions)",
+        "credits_per_song": "5 credits",
+        "free_credits": "50 per day",
+        "rate_limits": "Shared queue, 4 concurrent generations, standard priority (30s-5min wait). Credits do not roll over.",
+        "notes": "Only v4.5-all model on free. No commercial use. 128kbps MP3 only. Upload up to 8 min audio."
+      },
+      "status": "active",
+      "rating": 5,
+      "tags": [
+        "ai-music",
+        "song-generator",
+        "vocals",
+        "lyrics",
+        "free-tier"
+      ],
+      "notes": "V5.5 with voice cloning and custom models locked to paid. Sony/UMG lawsuits pending. Pro $8/mo for commercial use.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Udio",
+      "url": "https://udio.com",
+      "category": "music_generation",
+      "sub_category": "music_creator",
+      "description": "AI-powered platform that transforms text or lyrics into complete songs with vocals and instrumentals using latent diffusion transformer.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "Udio v4"
+      ],
+      "capabilities": [
+        "music-generation",
+        "lyrics-generation",
+        "vocals",
+        "instrumentals",
+        "stem-separation",
+        "style-transfer",
+        "multilingual-vocals",
+        "magic-edit"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_songs_per_day": "3",
+        "free_songs_per_month": "~90",
+        "song_duration": "32-130 seconds",
+        "credits_per_song": "2-4 credits",
+        "free_credits": "10/day + 100 monthly bonus",
+        "rate_limits": "10 credit daily cap. Credits don't roll over. Public only. Generates 2 versions per prompt.",
+        "notes": "No commercial use on free. Downloads currently disabled pending relaunch. 48kHz stereo up to 10 min on paid."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "ai-music",
+        "vocals",
+        "instrumentals",
+        "lyrics"
+      ],
+      "notes": "Commercial use requires Pro ($30/mo). Downloads disabled pending co-licensed UMG platform relaunch.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "ACE-Step",
+      "url": "https://acestep.io",
+      "category": "music_generation",
+      "sub_category": "ai-song-generator",
+      "description": "AI song generator creating full songs with vocals and instrumentation in ~20 seconds. Built on ACE Studio's open-source foundation model.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "ACE-Step (Verse25-powered vocal synth)"
+      ],
+      "capabilities": [
+        "text-to-music",
+        "vocal-synthesis",
+        "lyrics-generation",
+        "stem-splitting",
+        "vocal-removal",
+        "audio-to-midi",
+        "music-remixing"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_songs_per_day": "2",
+        "free_songs_per_month": "~60",
+        "free_credits": "10/day",
+        "rate_limits": "Max 120s duration, personal use only, 120kbps MP3. Each generation costs 5-10 credits.",
+        "notes": "Free tier personal use only — no commercial rights. Paid from $5.33/mo. Apache 2.0 open-source, can run locally."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "ai-music",
+        "vocal-synth",
+        "open-source",
+        "ace-studio"
+      ],
+      "notes": "Free web frontend for ACE Studio's open-source model. Desktop app ACE Studio ($398-$528 lifetime) has 140+ voices but no free tier.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "SoundGen",
+      "url": "https://soundgen.ai",
+      "category": "music_generation",
+      "sub_category": "music-generator-daw",
+      "description": "AI music platform with full multi-track DAW, stem separation, voice cloning, and pro mixing/mastering. Uses ElevenLabs models.",
+      "screenshot": "",
+      "models_count": 2,
+      "top_models": [
+        "soundgen-v1",
+        "elevenlabs-music-v1"
+      ],
+      "capabilities": [
+        "music-generation",
+        "text-to-music",
+        "text-to-loop",
+        "text-to-sfx",
+        "stem-separation",
+        "voice-cloning",
+        "daw",
+        "mixing",
+        "mastering"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_songs_per_day": "none",
+        "free_songs_per_month": "none",
+        "free_credits": "50 (one-time on signup)",
+        "rate_limits": "Each generation costs 10 credits (~30s audio). Credits never expire.",
+        "notes": "50 one-time credits on signup. No credit card required. Credits never expire. One-time credit packs available."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "ai-music",
+        "daw",
+        "stem-separation",
+        "voice-cloning"
+      ],
+      "notes": "Uses ElevenLabs models. Full multi-track DAW with 16 effects. Web and Mac desktop app. Credits never expire.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Niew.ai",
+      "url": "https://niew.ai",
+      "category": "music_generation",
+      "sub_category": "music-creator",
+      "description": "Free AI music generator with dual models (V1/V2), text-to-song, lyrics-to-song, AI covers, and music video creation. Up to 8 min songs.",
+      "screenshot": "",
+      "models_count": 2,
+      "top_models": [
+        "V1.0",
+        "V2.0"
+      ],
+      "capabilities": [
+        "music-generation",
+        "text-to-song",
+        "lyrics-to-song",
+        "ai-cover",
+        "instrumental",
+        "ai-lyrics-generator",
+        "ai-music-video"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - Invite & Earn program for extra credits.",
+      "free_tier_limits": {
+        "free_songs_per_day": "~2 (6 credits, 3 per song)",
+        "free_songs_per_month": "~60",
+        "free_credits": "6 credits total (not daily)",
+        "rate_limits": "All AI models and styles unlocked. Songs limited to shorter lengths on free. No WAV/MP3 download.",
+        "notes": "Free plan: 6 credits total for ~2 songs (not daily). No commercial rights. VIP $14/mo for full commercial."
+      },
+      "status": "active",
+      "rating": 3,
+      "tags": [
+        "ai-music",
+        "text-to-song",
+        "ai-cover",
+        "free"
+      ],
+      "notes": "Free tier very limited — 6 credits for ~2 songs total. Edge: 8-min song length and dual models. Compare: Suno 50 credits/day, Udio 10.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Mureka",
+      "url": "https://www.mureka.ai/",
+      "category": "music_generation",
+      "sub_category": "music-creator",
+      "description": "AI music platform with Chain-of-Thought (MusiCoT) architecture. Song generation, voice cloning, MIDI export, stem separation, and developer API.",
+      "screenshot": "",
+      "models_count": 6,
+      "top_models": [
+        "mureka-v7.5"
+      ],
+      "capabilities": [
+        "music-generation",
+        "lyrics-generation",
+        "vocal-cloning",
+        "stem-separation",
+        "midi-export",
+        "remix",
+        "song-translation",
+        "bgm-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - affiliate program via Rewardful. Earn commissions on new paying customers. 60-day payout delay.",
+      "free_tier_limits": {
+        "free_songs_per_day": "4",
+        "free_songs_per_month": "~120",
+        "free_credits": "~50 gold/day (each song costs ~12 gold)",
+        "rate_limits": "4 songs/day max. MP3 only. No downloads. No commercial rights. No stems. v7.5 model only.",
+        "notes": "Free outputs belong to Mureka per ToS (non-commercial only). No access to V9, V8, O2, V7.6 on free. Must regenerate on paid for commercial use."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "ai-music",
+        "lyrics",
+        "midi",
+        "stems",
+        "voice-cloning",
+        "api"
+      ],
+      "notes": "MusiCoT architecture plans song structure globally before generating. Supports 10 languages. Pro $9/mo (500 songs), Premier $27/mo (2000 songs, WAV, stems, MIDI). iOS/Android apps.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "MeloLab",
+      "url": "https://melolab.ai",
+      "category": "music_generation",
+      "sub_category": "music-creator",
+      "description": "AI music platform with multiple models (ACE Step, Suno, MiniMax, Lyria, HeartMuLa, Mureka). Text-to-song, AI covers, stem separation, multi-track DAW.",
+      "screenshot": "",
+      "models_count": 9,
+      "top_models": [
+        "ACE Step 1.5",
+        "Suno V5.5",
+        "Google Lyria 3 Pro",
+        "MiniMax Music 2.6",
+        "HeartMuLa",
+        "Mureka O2",
+        "Mureka V9"
+      ],
+      "capabilities": [
+        "music-generation",
+        "text-to-music",
+        "lyrics-to-song",
+        "ai-cover",
+        "ai-remix",
+        "stem-splitter",
+        "vocal-remover",
+        "ai-mastering",
+        "hum-to-song",
+        "image-to-music",
+        "midi-editor",
+        "multi-track-daw"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_songs_per_day": "~2 Suno songs or up to 10 ACE Step songs",
+        "free_songs_per_month": "up to 4 Suno songs (10 credits/month)",
+        "free_credits": "10",
+        "rate_limits": "1 concurrent generation. Song storage 7 days. Credits vary: ACE Step = 1cr, Lyria/HeartMuLa = 3cr, Suno = 4cr, MiniMax = 5cr.",
+        "notes": "All text-to-music models available on free. Personal use only. No commercial license. Studio features (Inpaint, Outpaint, Stems) included on free."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "ai-music",
+        "multi-model",
+        "stem-separation",
+        "daw",
+        "free-tier"
+      ],
+      "notes": "Free tier gives access to ALL models but limited to 10 credits/month. ACE Step 1.5 most cost-effective (1 credit). Songs stored 7 days on free.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Stable Audio",
+      "url": "https://stableaudio.com",
+      "category": "music_generation",
+      "sub_category": "music-generator",
+      "description": "Stability AI's text-to-audio platform generating instrumental music and sound effects using proprietary audio diffusion models. Open-weight models available.",
+      "screenshot": "",
+      "models_count": 4,
+      "top_models": [
+        "Stable Audio 2.0",
+        "Stable Audio 2.5",
+        "Stable Audio 3.0 Small",
+        "Stable Audio 3.0 Medium"
+      ],
+      "capabilities": [
+        "music-generation",
+        "sound-effects",
+        "text-to-audio",
+        "audio-to-audio",
+        "inpainting",
+        "track-extension"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "free_tier_limits": {
+        "free_tracks_per_month": "20",
+        "free_duration_per_track": "45 seconds",
+        "credits_per_track": "1",
+        "free_credits": "20",
+        "rate_limits": "Monthly reset, no rollover. Non-commercial only, watermarked.",
+        "notes": "Free credits unavailable in some regions. Pro $11.99/mo for commercial + 500 tracks."
+      },
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "music-generation",
+        "sound-effects",
+        "stability-ai",
+        "open-weight"
+      ],
+      "notes": "Backed by Stability AI. Pro $11.99/mo (500 tracks), Studio $29.99/mo (675 tracks). Open-weight models on HuggingFace for self-hosting.",
+      "last_verified": "2026-06-10"
+    }
+  ]
+}

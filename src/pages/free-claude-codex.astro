@@ -1,0 +1,182 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { toolsByCategory } from '../data/tools';
+import { CATEGORY_META } from '../data/types';
+import type { Tool } from '../data/types';
+
+const tools = toolsByCategory['free_claude_codex'] ?? [];
+const meta = CATEGORY_META['free_claude_codex'];
+
+const resellers  = tools.filter(t => t.proxy_type !== 'third-party-unofficial');
+const unofficial = tools.filter(t => t.proxy_type === 'third-party-unofficial');
+---
+
+<Layout
+  title="Free Claude Code & Codex CLI — API Proxies — FreeLM"
+  description="Run Claude Code CLI and OpenAI Codex CLI for free using API proxy services. Includes official resellers and community-maintained gateways."
+>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-8 pb-20">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs mb-8" style="color: var(--text-muted);" data-motion="left">
+      <a href="/" class="hover:underline">Home</a>
+      <span>/</span>
+      <span style="color: var(--text-secondary);">Free Claude Code &amp; Codex</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="mb-10" data-motion="up">
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center text-2xl relative overflow-hidden"
+             style={`background: ${meta.gradient}; border: 1px solid var(--border-default);`}>
+          🤖
+          <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 55%);"></div>
+        </div>
+        <h1 class="text-3xl font-bold" style="color: var(--text-primary); letter-spacing: -0.03em;">
+          Free Claude Code &amp; Codex
+        </h1>
+      </div>
+      <p class="text-sm leading-relaxed max-w-2xl mb-4" style="color: var(--text-tertiary);">
+        Run <strong style="color: var(--text-secondary);">Claude Code CLI</strong> and <strong style="color: var(--text-secondary);">OpenAI Codex CLI</strong> without paying full API prices.
+        These services act as proxy gateways — you point your CLI at their endpoint instead of directly at Anthropic or OpenAI.
+      </p>
+
+      <!-- How it works box -->
+      <div class="rounded-2xl p-5 mb-2" style="background: var(--bg-surface); border: 1px solid var(--border-default);">
+        <h2 class="text-sm font-semibold mb-3" style="color: var(--text-primary);">How it works</h2>
+        <div class="grid sm:grid-cols-3 gap-4 text-xs" style="color: var(--text-tertiary);">
+          <div class="flex gap-2">
+            <span class="w-5 h-5 rounded-full flex items-center justify-center text-white text-xs shrink-0 mt-0.5 font-bold" style="background: var(--accent-primary);">1</span>
+            <p>Sign up for a proxy service and get their API key</p>
+          </div>
+          <div class="flex gap-2">
+            <span class="w-5 h-5 rounded-full flex items-center justify-center text-white text-xs shrink-0 mt-0.5 font-bold" style="background: var(--accent-primary);">2</span>
+            <p>Set <code class="px-1 rounded" style="background:var(--bg-muted);font-family:monospace;">ANTHROPIC_BASE_URL</code> or <code class="px-1 rounded" style="background:var(--bg-muted);font-family:monospace;">OPENAI_BASE_URL</code> to the proxy endpoint</p>
+          </div>
+          <div class="flex gap-2">
+            <span class="w-5 h-5 rounded-full flex items-center justify-center text-white text-xs shrink-0 mt-0.5 font-bold" style="background: var(--accent-primary);">3</span>
+            <p>Run Claude Code or Codex CLI as normal — the proxy handles routing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official / Reseller services -->
+    <section class="mb-10">
+      <h2 class="text-lg font-bold mb-1" style="color: var(--text-primary);">Recommended Services</h2>
+      <p class="text-xs mb-5" style="color: var(--text-muted);">Official resellers with genuine free tiers and good community reputation</p>
+
+      <div class="space-y-4">
+        {resellers.map((tool: Tool) => (
+          <div class="rounded-2xl p-6 relative overflow-hidden" style="background: var(--bg-surface); border: 1px solid var(--border-default); box-shadow: var(--shadow-card);" data-motion="up">
+            <!-- Top row -->
+            <div class="flex items-start justify-between gap-4 mb-4">
+              <div>
+                <div class="flex items-center gap-2 mb-1">
+                  <h3 class="font-semibold" style="color: var(--text-primary);">{tool.name}</h3>
+                  <span class="pill" style="background:rgba(22,163,74,0.1);color:#16a34a;border-color:rgba(22,163,74,0.2);font-size:10px;">
+                    {tool.free_tier_limits?.free_credits ?? 'Free tier'}
+                  </span>
+                </div>
+                <p class="text-xs leading-relaxed" style="color: var(--text-tertiary);">{tool.description}</p>
+              </div>
+              <a href={tool.url} target="_blank" rel="noopener noreferrer" class="btn btn-primary text-xs shrink-0">
+                Get key
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 10L10 2M4 2h6v6"/></svg>
+              </a>
+            </div>
+
+            <!-- Setup code blocks -->
+            <div class="grid sm:grid-cols-2 gap-3">
+              {tool.claude_code_setup && (
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider mb-1.5" style="color: var(--text-muted);">Claude Code</p>
+                  <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;line-height:1.6;">{tool.claude_code_setup}</pre>
+                </div>
+              )}
+              {tool.codex_setup && (
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider mb-1.5" style="color: var(--text-muted);">Codex CLI</p>
+                  <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;line-height:1.6;">{tool.codex_setup}</pre>
+                </div>
+              )}
+            </div>
+
+            <!-- Models row -->
+            {tool.top_models.length > 0 && (
+              <div class="mt-3 pt-3" style="border-top: 1px solid var(--border-default);">
+                <div class="flex flex-wrap gap-1.5">
+                  {tool.top_models.slice(0, 5).map(m => (
+                    <span class="pill text-xs font-mono">{m}</span>
+                  ))}
+                  {tool.top_models.length > 5 && <span class="text-xs" style="color:var(--text-muted);">+{tool.top_models.length - 5}</span>}
+                </div>
+              </div>
+            )}
+
+            <div class="mt-3">
+              <a href={`/tool/${tool.id}`} class="text-xs" style="color: var(--accent-primary);">View full details →</a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Chinese proxy section -->
+    {unofficial.length > 0 && (
+      <section>
+        <div class="flex items-center gap-2 mb-1">
+          <h2 class="text-lg font-bold" style="color: var(--text-primary);">Community Proxies</h2>
+          <span class="pill text-xs" style="background:rgba(239,68,68,0.1);color:#dc2626;border-color:rgba(239,68,68,0.2);">⚠️ Use Carefully</span>
+        </div>
+        <p class="text-xs leading-relaxed mb-4 max-w-2xl" style="color: var(--text-muted);">
+          These are <strong style="color:var(--text-secondary);">unofficial third-party proxies</strong> — not affiliated with Anthropic or OpenAI.
+          Your prompts and code route through their servers. <strong style="color:#dc2626;">Do not use for sensitive, proprietary, or confidential code.</strong>
+          Suitable for hobby projects and learning only.
+        </p>
+
+        <div class="space-y-4">
+          {unofficial.map((tool: Tool) => (
+            <div class="rounded-2xl p-6" style="background: var(--bg-surface); border: 1px solid rgba(239,68,68,0.2);" data-motion="up">
+              <!-- Warning banner -->
+              <div class="flex items-center gap-2 px-3 py-2 rounded-xl mb-4 text-xs" style="background:rgba(239,68,68,0.08);color:#dc2626;border:1px solid rgba(239,68,68,0.15);">
+                ⚠️ Unofficial proxy — prompts pass through third-party servers in China. Use only for non-sensitive code.
+              </div>
+
+              <div class="flex items-start justify-between gap-4 mb-4">
+                <div>
+                  <div class="flex items-center gap-2 mb-1">
+                    <h3 class="font-semibold" style="color: var(--text-primary);">{tool.name}</h3>
+                  </div>
+                  <p class="text-xs leading-relaxed" style="color: var(--text-tertiary);">{tool.description}</p>
+                </div>
+                <a href={tool.url} target="_blank" rel="noopener noreferrer" class="btn btn-ghost text-xs shrink-0">
+                  Visit
+                  <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 10L10 2M4 2h6v6"/></svg>
+                </a>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-3">
+                {tool.claude_code_setup && (
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider mb-1.5" style="color: var(--text-muted);">Claude Code</p>
+                    <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;line-height:1.6;">{tool.claude_code_setup}</pre>
+                  </div>
+                )}
+                {tool.codex_setup && (
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-wider mb-1.5" style="color: var(--text-muted);">Codex CLI</p>
+                    <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;line-height:1.6;">{tool.codex_setup}</pre>
+                  </div>
+                )}
+              </div>
+
+              <div class="mt-3">
+                <a href={`/tool/${tool.id}`} class="text-xs" style="color: var(--accent-primary);">View full details →</a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</Layout>

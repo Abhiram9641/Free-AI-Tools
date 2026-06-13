@@ -1,0 +1,273 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { allTools, toolsByCategory } from '../../data/tools';
+import { CATEGORY_META } from '../../data/types';
+
+export function getStaticPaths() {
+  return allTools.map(tool => ({ params: { id: tool.id }, props: { tool } }));
+}
+
+const { tool } = Astro.props;
+const meta = CATEGORY_META[tool.category];
+
+const related = (toolsByCategory[tool.category] ?? [])
+  .filter(t => t.id !== tool.id && t.status === 'active')
+  .sort((a, b) => b.rating - a.rating)
+  .slice(0, 4);
+
+const pricingLabel = tool.pricing === 'free' ? 'Free' : tool.pricing === 'freemium' ? 'Freemium' : 'Paid';
+const pricingStyle = tool.pricing === 'free'
+  ? 'background:rgba(22,163,74,0.1);color:#16a34a;border-color:rgba(22,163,74,0.2)'
+  : tool.pricing === 'freemium'
+  ? 'background:var(--accent-light);color:var(--accent-primary);border-color:rgba(80,56,214,0.2)'
+  : 'background:rgba(245,158,11,0.1);color:#d97706;border-color:rgba(245,158,11,0.2)';
+---
+
+<Layout
+  title={`${tool.name} — ${meta?.label} — FreeLM`}
+  description={tool.description}
+>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-20">
+    <!-- Breadcrumb -->
+    <nav class="flex items-center gap-2 text-xs mb-8 flex-wrap" style="color: var(--text-muted);" data-motion="left">
+      <a href="/" class="hover:underline">Home</a>
+      <span>/</span>
+      <a href="/categories" class="hover:underline">Categories</a>
+      <span>/</span>
+      <a href={`/category/${tool.category}`} class="hover:underline">{meta?.label}</a>
+      <span>/</span>
+      <span style="color: var(--text-secondary);">{tool.name}</span>
+    </nav>
+
+    <!-- Hero card -->
+    <div class="rounded-3xl p-6 sm:p-8 mb-5 relative overflow-hidden"
+         style="background: var(--bg-surface); border: 1px solid var(--border-default); box-shadow: var(--shadow-elevated);"
+         data-motion="up">
+      <!-- Subtle radial glow -->
+      <div class="absolute inset-0 pointer-events-none"
+           style={`background: radial-gradient(ellipse 55% 70% at 0% 0%, ${meta?.gradient.includes('violet') ? 'rgba(139,92,246,0.08)' : 'rgba(80,56,214,0.06)'} 0%, transparent 60%);`}></div>
+
+      <div class="relative flex flex-col sm:flex-row sm:items-start gap-5">
+        <!-- Icon -->
+        <div class="w-16 h-16 rounded-2xl flex items-center justify-center text-4xl relative overflow-hidden shrink-0"
+             style={`background: ${meta?.gradient ?? 'var(--bg-muted)'}; border: 1px solid var(--border-default);`}>
+          {meta?.icon ?? '🔧'}
+          <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 55%);"></div>
+        </div>
+
+        <!-- Info -->
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <h1 class="text-2xl sm:text-3xl font-bold" style="color: var(--text-primary); letter-spacing: -0.03em;">{tool.name}</h1>
+            {tool.status === 'inactive' && (
+              <span class="pill text-xs" style="background:rgba(239,68,68,0.1);color:#dc2626;border-color:rgba(239,68,68,0.2);">Discontinued</span>
+            )}
+          </div>
+          <p class="text-sm leading-relaxed mb-4 max-w-2xl" style="color: var(--text-tertiary);">{tool.description}</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="pill" style={pricingStyle}>{pricingLabel}</span>
+            {tool.login_type === 'none' && <span class="pill">No login</span>}
+            {tool.login_type !== 'none' && tool.login_type && (
+              <span class="pill capitalize">{tool.login_type}</span>
+            )}
+            {tool.models_count > 0 && <span class="pill">{tool.models_count}+ models</span>}
+            {tool.rating > 0 && (
+              <span class="pill flex items-center gap-1">
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="#f59e0b"><path d="M6 1l1.35 2.73 3.01.44-2.18 2.12.51 3-2.69-1.41L3.31 9.3l.51-3L1.64 4.17l3.01-.44z"/></svg>
+                {tool.rating.toFixed(1)}
+              </span>
+            )}
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="shrink-0 self-start">
+          <a href={tool.url} target="_blank" rel="noopener noreferrer" class="btn btn-primary text-sm">
+            Visit {tool.name}
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M2 10L10 2M4 2h6v6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
+      <!-- Left: main details -->
+      <div class="md:col-span-2 space-y-4">
+
+        <!-- Capabilities -->
+        {tool.capabilities.length > 0 && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-3 flex items-center gap-2" style="color: var(--text-primary);">
+              <span class="w-5 h-5 rounded-md flex items-center justify-center text-xs" style="background:var(--accent-light);">⚡</span>
+              Capabilities
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {tool.capabilities.map(cap => (
+                <span class="pill pill-accent text-xs">{cap.replace(/-/g, ' ')}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Top models -->
+        {tool.top_models.length > 0 && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-3 flex items-center gap-2" style="color: var(--text-primary);">
+              <span class="w-5 h-5 rounded-md flex items-center justify-center text-xs" style="background:var(--accent-light);">🤖</span>
+              Supported Models
+            </h2>
+            <div class="flex flex-wrap gap-2">
+              {tool.top_models.map(m => (
+                <span class="pill font-mono text-xs">{m}</span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Free tier limits -->
+        {tool.free_tier_limits && Object.keys(tool.free_tier_limits).length > 0 && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-4 flex items-center gap-2" style="color: var(--text-primary);">
+              <span class="w-5 h-5 rounded-md flex items-center justify-center text-xs" style="background:rgba(22,163,74,0.12);color:#16a34a;">✓</span>
+              Free Tier Details
+            </h2>
+            <div class="space-y-0">
+              {Object.entries(tool.free_tier_limits)
+                .filter(([k]) => k !== 'notes')
+                .map(([key, val]) => val != null && val !== '' && (
+                  <div class="flex items-start gap-4 py-2.5" style="border-bottom: 1px solid var(--border-default);">
+                    <span class="text-xs capitalize shrink-0 w-36 pt-px" style="color: var(--text-muted);">
+                      {key.replace(/_/g, ' ')}
+                    </span>
+                    <span class="text-xs flex-1 leading-relaxed" style="color: var(--text-secondary);">{String(val)}</span>
+                  </div>
+                ))
+              }
+              {tool.free_tier_limits.notes && (
+                <div class="mt-3 px-3 py-2.5 rounded-xl text-xs leading-relaxed" style="background:var(--bg-muted);color:var(--text-tertiary);border:1px solid var(--border-default);">
+                  {String(tool.free_tier_limits.notes)}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        <!-- Notes -->
+        {tool.notes && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-3" style="color: var(--text-primary);">Notes</h2>
+            <p class="text-sm leading-relaxed" style="color: var(--text-tertiary);">{tool.notes}</p>
+          </div>
+        )}
+
+        <!-- Best for (API providers) -->
+        {tool.best_for && tool.best_for.length > 0 && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-3" style="color: var(--text-primary);">Best For</h2>
+            <div class="flex flex-wrap gap-2">
+              {tool.best_for.map(b => <span class="pill text-xs">{b.replace(/-/g, ' ')}</span>)}
+            </div>
+          </div>
+        )}
+
+        <!-- Claude Code / Codex setup instructions -->
+        {(tool.claude_code_setup || tool.codex_setup) && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-4 flex items-center gap-2" style="color: var(--text-primary);">
+              <span class="w-5 h-5 rounded-md flex items-center justify-center text-xs" style="background:rgba(249,115,22,0.15);color:#f97316;">🤖</span>
+              Setup Instructions
+            </h2>
+            {tool.claude_code_setup && (
+              <div class="mb-4">
+                <p class="text-xs font-semibold mb-2 uppercase tracking-wider" style="color: var(--text-muted);">Claude Code CLI</p>
+                <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;">{tool.claude_code_setup}</pre>
+              </div>
+            )}
+            {tool.codex_setup && (
+              <div>
+                <p class="text-xs font-semibold mb-2 uppercase tracking-wider" style="color: var(--text-muted);">OpenAI Codex CLI</p>
+                <pre class="text-xs p-3 rounded-xl overflow-x-auto" style="background:var(--bg-muted);color:var(--text-secondary);border:1px solid var(--border-default);font-family:'JetBrains Mono',monospace;white-space:pre-wrap;word-break:break-all;">{tool.codex_setup}</pre>
+              </div>
+            )}
+          </div>
+        )}
+
+        <!-- Third-party proxy warning -->
+        {tool.proxy_type === 'third-party-unofficial' && (
+          <div class="rounded-2xl p-5" style="background:rgba(239,68,68,0.05);border:1px solid rgba(239,68,68,0.2);" data-motion="up">
+            <h2 class="text-sm font-semibold mb-2 flex items-center gap-2" style="color:#dc2626;">
+              ⚠️ Third-Party Proxy Warning
+            </h2>
+            <p class="text-sm leading-relaxed" style="color:var(--text-tertiary);">
+              This is an <strong>unofficial third-party proxy</strong> — not affiliated with Anthropic or OpenAI. Your prompts, code, and API traffic route through servers operated by an independent party. <strong>Do not use for sensitive, proprietary, or confidential code.</strong> Use only for hobby projects and learning.
+            </p>
+          </div>
+        )}
+      </div>
+
+      <!-- Right: sidebar -->
+      <div class="space-y-4">
+        <!-- Quick info -->
+        <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="scale">
+          <h2 class="text-sm font-semibold mb-4" style="color: var(--text-primary);">Quick Info</h2>
+          <div class="space-y-3">
+            {([
+              ['Category', meta?.label],
+              ['Pricing', pricingLabel],
+              ['Login', tool.login_type === 'none' ? 'Not required' : tool.login_type],
+              ['Referrals', tool.referrals === 'no' || tool.referrals === 'unknown' ? 'None' : 'Yes'],
+              ['Status', tool.status === 'active' ? 'Active' : 'Inactive'],
+              ['Verified', tool.last_verified],
+            ] as [string,string][]).map(([label, value]) => value && (
+              <div class="flex items-center justify-between text-xs gap-2">
+                <span style="color: var(--text-muted);">{label}</span>
+                <span class="font-medium text-right truncate" style="color: var(--text-secondary); max-width: 55%;">{value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Tags -->
+        {tool.tags.length > 0 && (
+          <div class="rounded-2xl p-5" style="background:var(--bg-surface);border:1px solid var(--border-default);" data-motion="scale">
+            <h2 class="text-sm font-semibold mb-3" style="color: var(--text-primary);">Tags</h2>
+            <div class="flex flex-wrap gap-1.5">
+              {tool.tags.map(tag => <span class="pill text-xs">{tag}</span>)}
+            </div>
+          </div>
+        )}
+
+        <!-- Visit -->
+        <a href={tool.url} target="_blank" rel="noopener noreferrer"
+           class="btn btn-primary w-full justify-center text-sm">
+          Visit {tool.name}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2 10L10 2M4 2h6v6"/>
+          </svg>
+        </a>
+
+        <!-- Paid tier -->
+        {tool.paid_tier_starting && (
+          <div class="rounded-xl p-4 text-xs leading-relaxed" style="background:var(--bg-muted);border:1px solid var(--border-default);">
+            <p class="font-medium mb-1" style="color: var(--text-secondary);">Paid plans start at</p>
+            <p style="color: var(--text-tertiary);">{tool.paid_tier_starting}</p>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <!-- Related tools -->
+    {related.length > 0 && (
+      <div class="mt-10" data-motion="up">
+        <h2 class="text-xl font-bold mb-5" style="color: var(--text-primary); letter-spacing: -0.02em;">More {meta?.label} Tools</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 stagger-grid">
+          {related.map(t => <ToolCard tool={t} compact />)}
+        </div>
+      </div>
+    )}
+  </div>
+</Layout>

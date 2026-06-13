@@ -1,0 +1,211 @@
+{
+  "category": "free_claude_codex",
+  "last_updated": "2026-06-13",
+  "description": "Services that let you run Claude Code CLI and OpenAI Codex CLI for free or at significantly reduced cost by proxying API calls through alternative endpoints.",
+  "tools": [
+    {
+      "name": "aerolink.lat",
+      "url": "https://aerolink.lat",
+      "category": "free_claude_codex",
+      "sub_category": "claude-code-proxy",
+      "description": "Unified API gateway designed for AI agents — one key for Claude, GPT, Gemini, and DeepSeek with $350+ free credits on signup. INR pricing makes it very affordable for Indian developers.",
+      "screenshot": "",
+      "models_count": 7,
+      "top_models": [
+        "claude-opus-4-8",
+        "claude-opus-4-6",
+        "claude-sonnet-4-6",
+        "claude-haiku-4-5",
+        "gpt-4o",
+        "gemini-2.5-pro",
+        "deepseek-v4-pro"
+      ],
+      "capabilities": [
+        "claude-code-compatible",
+        "codex-cli-compatible",
+        "openai-compatible",
+        "anthropic-compatible",
+        "text-generation",
+        "code-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": ["claude-proxy", "claude-code", "agentic-ai", "inr-pricing", "indian-developers", "third-party"],
+      "proxy_type": "official-reseller",
+      "claude_code_setup": "Set ANTHROPIC_BASE_URL=https://api.aerolink.lat and ANTHROPIC_API_KEY=<your-aerolink-key>",
+      "codex_setup": "Set OPENAI_BASE_URL=https://api.aerolink.lat/v1 and OPENAI_API_KEY=<your-aerolink-key>",
+      "free_tier_limits": {
+        "free_credits": "$350+ free credits on signup",
+        "rolling_window": "5-hour and 7-day rolling usage windows",
+        "notes": "Legitimate reseller with rolling usage limits. INR pricing available (₹449/mo Starter). Plans: $5 Starter → $200 Power. Primarily targets Indian developers. Contact via Telegram @aerolinkk for support."
+      },
+      "notes": "Legitimate API reseller — operates within Anthropic/OpenAI reseller agreements. $350+ free credits make it one of the most generous free tiers for Claude Code. Pricing in both USD and INR. Contact via Telegram @aerolinkk.",
+      "last_verified": "2026-06-13"
+    },
+    {
+      "name": "Agent Router",
+      "url": "https://pro.agentrouter.org",
+      "category": "free_claude_codex",
+      "sub_category": "claude-code-proxy",
+      "description": "Unified LLM API gateway routing to OpenAI, Anthropic, DeepSeek, Zhipu GLM, and Moonshot via a single OpenAI/Anthropic-compatible endpoint. $200 free credits on signup.",
+      "screenshot": "",
+      "models_count": 25,
+      "top_models": [
+        "claude-opus-4",
+        "claude-sonnet-4",
+        "gpt-5",
+        "gpt-4o",
+        "deepseek-chat",
+        "glm-4",
+        "moonshot-v1"
+      ],
+      "capabilities": [
+        "claude-code-compatible",
+        "openai-compatible",
+        "anthropic-compatible",
+        "text-generation",
+        "code-generation",
+        "api-routing"
+      ],
+      "pricing": "freemium",
+      "login_type": "github",
+      "referrals": "no",
+      "status": "active",
+      "rating": 3.5,
+      "tags": ["agent-router", "yc-w25", "claude-proxy", "claude-code", "llm-gateway", "third-party"],
+      "proxy_type": "reseller",
+      "claude_code_setup": "Set ANTHROPIC_BASE_URL=https://pro.agentrouter.org and use your AgentRouter API key",
+      "codex_setup": "Set OPENAI_BASE_URL=https://pro.agentrouter.org/v1 with your AgentRouter key",
+      "free_tier_limits": {
+        "free_credits": "$1 welcome bonus (~800K input tokens on deepseek-chat or ~66K on gpt-4o)",
+        "notes": "No ongoing free tier after bonus. Top-up via admin contact. Auto-routes by model name prefix (gpt-* → OpenAI, claude-* → Anthropic). Wallet-based billing."
+      },
+      "notes": "YC W25 startup. Also at agentrouter.to for broader agent API routing across 17+ domains. Supports both OpenAI /v1/chat/completions and Anthropic Messages API formats. Wallet-based billing — top up to continue after $1 bonus.",
+      "last_verified": "2026-06-13"
+    },
+    {
+      "name": "iyh.app",
+      "url": "https://iyh.app",
+      "category": "free_claude_codex",
+      "sub_category": "claude-code-proxy",
+      "description": "Integrated Yotta Hub — 500K free tokens (never expire) for Claude Opus 4.8, GPT-5.5, and Gemini via a single OpenAI-compatible endpoint. Has explicit setup guides for Claude Code and Codex CLI.",
+      "screenshot": "",
+      "models_count": 20,
+      "top_models": [
+        "claude-opus-4-8",
+        "claude-sonnet-4-6",
+        "claude-haiku-4-5",
+        "gpt-5-5",
+        "gpt-4o",
+        "gemini-3-1-pro",
+        "gemini-2-5-flash"
+      ],
+      "capabilities": [
+        "claude-code-compatible",
+        "codex-cli-compatible",
+        "openai-compatible",
+        "anthropic-compatible",
+        "text-generation",
+        "code-generation",
+        "multi-model-routing"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 3.5,
+      "tags": ["iyh", "claude-code", "500k-free", "token-bundles", "third-party"],
+      "proxy_type": "reseller",
+      "claude_code_setup": "Set ANTHROPIC_BASE_URL=https://iyh.app and ANTHROPIC_API_KEY=<iyh-key>",
+      "codex_setup": "Set OPENAI_BASE_URL=https://iyh.app/v1 and OPENAI_API_KEY=<iyh-key>",
+      "free_tier_limits": {
+        "free_credits": "500,000 tokens forever (no expiry)",
+        "paid_bundles": "$1 → 5M tokens, $4 → 27M, $10 → 90M, $30 → 300M",
+        "notes": "500K free tokens never expire — good for light Claude Code sessions. Token multiplier: 1x (base models) to 4x (Opus). Supports USD and IDR pricing. Has Discord community and explicit Claude Code / Codex CLI setup guides."
+      },
+      "notes": "Indonesian-based reseller. 500K free forever tokens is genuinely useful for Claude Code. Has explicit guides for Claude Code, Codex CLI, and OpenCode. Discord community for support.",
+      "last_verified": "2026-06-13"
+    },
+    {
+      "name": "api.hcrsec.cn",
+      "url": "https://api.hcrsec.cn",
+      "category": "free_claude_codex",
+      "sub_category": "chinese-proxy",
+      "description": "Chinese AI API proxy offering free and low-cost access to Claude, GPT, and Gemini via OpenAI-compatible endpoint. Popular in Chinese developer communities for running Claude Code at near-zero cost.",
+      "screenshot": "",
+      "models_count": 15,
+      "top_models": [
+        "claude-opus-4-6",
+        "claude-sonnet-4-6",
+        "gpt-4o",
+        "gemini-2-5-flash",
+        "deepseek-v3"
+      ],
+      "capabilities": [
+        "claude-code-compatible",
+        "codex-cli-compatible",
+        "openai-compatible",
+        "text-generation",
+        "code-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "unknown",
+      "status": "active",
+      "rating": 3,
+      "tags": ["chinese-proxy", "hcrsec", "claude-code", "free-tier", "third-party"],
+      "proxy_type": "third-party-unofficial",
+      "claude_code_setup": "Set ANTHROPIC_BASE_URL=https://api.hcrsec.cn and ANTHROPIC_API_KEY=<hcrsec-key>",
+      "codex_setup": "Set OPENAI_BASE_URL=https://api.hcrsec.cn/v1 and OPENAI_API_KEY=<hcrsec-key>",
+      "free_tier_limits": {
+        "free_credits": "Free quota on signup — check dashboard for current amount",
+        "notes": "⚠️ UNOFFICIAL THIRD-PARTY PROXY: Your prompts and code route through servers in China. Not affiliated with Anthropic or OpenAI. Use only for non-sensitive projects. Community-verified working as of June 2026."
+      },
+      "notes": "⚠️ Unofficial third-party proxy. Your prompts, code, and API keys pass through third-party Chinese servers — do NOT use for sensitive or proprietary code. For hobby/learning use only. Community reports it as working and low-cost. Pricing in CNY.",
+      "last_verified": "2026-06-13"
+    },
+    {
+      "name": "tokenlb.net",
+      "url": "https://tokenlb.net",
+      "category": "free_claude_codex",
+      "sub_category": "chinese-proxy",
+      "description": "Chinese LLM API gateway with load-balanced access to Claude, GPT-4o, Gemini, DeepSeek, Qwen, and Llama. Single prepaid key, OpenAI-compatible — used by developers for low-cost Claude Code proxying.",
+      "screenshot": "",
+      "models_count": 20,
+      "top_models": [
+        "claude-sonnet-4",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "deepseek-v3",
+        "gemini-2-0-flash",
+        "qwen-2-5-72b"
+      ],
+      "capabilities": [
+        "claude-code-compatible",
+        "codex-cli-compatible",
+        "openai-compatible",
+        "text-generation",
+        "code-generation",
+        "load-balancing"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "unknown",
+      "status": "active",
+      "rating": 3,
+      "tags": ["tokenlb", "chinese-proxy", "claude-code", "load-balanced", "third-party"],
+      "proxy_type": "third-party-unofficial",
+      "claude_code_setup": "Set ANTHROPIC_BASE_URL=https://tokenlb.net and ANTHROPIC_API_KEY=<tokenlb-key>",
+      "codex_setup": "Set OPENAI_BASE_URL=https://tokenlb.net/v1 and OPENAI_API_KEY=<tokenlb-key>",
+      "free_tier_limits": {
+        "free_credits": "Small trial balance on signup",
+        "notes": "⚠️ UNOFFICIAL THIRD-PARTY PROXY: Requests route through third-party infrastructure in China. Not affiliated with Anthropic or OpenAI. Prepaid top-up after trial. Very cheap vs direct API. Use only for non-sensitive code."
+      },
+      "notes": "⚠️ Unofficial third-party proxy. Your API traffic routes through third-party Chinese servers — do NOT use for sensitive or proprietary code. Prepaid model: top up balance to continue. Significantly cheaper than direct API. New domain with limited community reputation.",
+      "last_verified": "2026-06-13"
+    }
+  ]
+}

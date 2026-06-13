@@ -1,0 +1,510 @@
+[
+  {
+    "name": "Antigravity",
+    "url": "https://antigravity.google",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "Google's agent-first development platform with a VS Code fork IDE (Desktop App) and CLI (agy) — powered by Gemini 3.5 Flash with multi-agent orchestration. Successor to Gemini CLI.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "Gemini 3.1 Pro",
+      "Gemini 3 Flash",
+      "Claude Sonnet 4.6",
+      "Claude Opus 4.6",
+      "GPT-OSS 120B"
+    ],
+    "capabilities": [
+      "code-generation",
+      "autocomplete",
+      "chat",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "terminal"
+    ],
+    "pricing": "freemium",
+    "login_type": "google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "20",
+      "free_requests_per_month": "~600",
+      "autocomplete_suggestions": "unlimited (editor features free)",
+      "chat_messages": "included in 20/day agent requests",
+      "rate_limits": "20 agent requests/day (~5 hour refresh). 5 requests/minute. Tab completions unlimited.",
+      "notes": "Free tier cut ~92% from original 250 req/day. No credit card required. All 5 models on free tier but heavily rate-limited."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "google",
+      "antigravity",
+      "ide",
+      "ai-coding",
+      "terminal",
+      "gemini-cli-replacement"
+    ],
+    "platforms": ["macOS", "Windows", "Linux", "Web"],
+    "notes": "Also listed under CLI coding agents. Three surfaces: Desktop App (VS Code fork), CLI (agy), SDK. Gemini CLI/Code Assist free tier stops June 18, 2026 — migrate here. Paid: AI Pro $20/mo, AI Ultra $249.99/mo. Launched Nov 2025, v2.0 at Google I/O May 2026.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Cursor",
+    "url": "https://cursor.com",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "AI-native standalone IDE (VS Code fork) by Anysphere with agentic coding, multi-model support, Composer 2.5, and deep codebase understanding.",
+    "screenshot": "",
+    "models_count": 40,
+    "top_models": [
+      "Composer 2.5",
+      "Claude 4.6 Sonnet",
+      "GPT-5.2",
+      "Gemini 3.1 Pro",
+      "Grok 4.3",
+      "Claude 4.5 Haiku",
+      "GPT-5 Mini"
+    ],
+    "capabilities": [
+      "code-generation",
+      "autocomplete",
+      "chat",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "terminal"
+    ],
+    "pricing": "freemium",
+    "login_type": "email/github/google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "~1-2 (50 slow premium requests/month total)",
+      "free_requests_per_month": "50 slow premium model requests",
+      "autocomplete_suggestions": "2,000 Tab completions per month",
+      "chat_messages": "included in 50 slow premium requests pool (shared with Agent and Composer)",
+      "rate_limits": "Premium models at slow speed on free tier. Monthly pool of 50 resets. No credit card needed.",
+      "notes": "Hobby plan (free) includes limited Agent + limited Tab completions. 7-day free Pro trial. Students get 1 year free Pro with .edu."
+    },
+    "status": "active",
+    "rating": 5,
+    "tags": [
+      "cursor",
+      "ai-ide",
+      "vs-code-fork",
+      "autocomplete",
+      "agent"
+    ],
+    "platforms": ["macOS", "Windows", "Linux"],
+    "notes": "Free Hobby: 2,000 Tab/mo + 50 slow premium requests/mo. Pro $20/mo ($16 annual): unlimited Tab, $20 API credit pool, unlimited Agent runs, all frontier models at full speed, MCP, cloud agents. Pro+ $60/mo, Ultra $200/mo. Credit-based since late 2025. Own model: Composer 2.5. Trusted by Coinbase, OpenAI, Stripe, NVIDIA.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Windsurf",
+    "url": "https://windsurf.com",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "AI-native standalone IDE (VS Code fork) originally by Codeium, now owned by Cognition AI and rebranded as Devin Desktop. Features Cascade/Devin Local agent for multi-file editing.",
+    "screenshot": "",
+    "models_count": 8,
+    "top_models": [
+      "SWE-1.6",
+      "Claude Sonnet",
+      "GPT-4o",
+      "Gemini 3.5 Flash",
+      "Claude Haiku",
+      "GPT-5.2 Mini",
+      "Kimi K2.5"
+    ],
+    "capabilities": [
+      "code-generation",
+      "autocomplete",
+      "chat",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "terminal",
+      "cascade"
+    ],
+    "pricing": "freemium",
+    "login_type": "google/github/email",
+    "referrals": "yes - 250 flex credits for both parties on Pro referral.",
+    "free_tier_limits": {
+      "free_requests_per_day": "quota-based (daily/weekly refresh, exact not published)",
+      "free_requests_per_month": "quota-based (not published)",
+      "autocomplete_suggestions": "unlimited",
+      "chat_messages": "limited (quota-based, daily/weekly refresh)",
+      "rate_limits": "Limited model selection on free. SWE-1.6 at slow speed. Unlimited Tab completions and inline edits.",
+      "notes": "Legacy was 25 credits/month (pre-Mar 2026). Now quota-based with daily/weekly refresh. No credit card required for free."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "windsurf",
+      "codeium",
+      "ai-ide",
+      "vs-code-fork",
+      "cascade",
+      "devin"
+    ],
+    "platforms": ["macOS", "Windows", "Linux"],
+    "notes": "Timeline: Codeium (2021) → Windsurf IDE (late 2024) → Acquired by Cognition AI ($250M, Dec 2025) → Rebranding to Devin Desktop (June 2026). Cascade replaced by Devin Local (Rust, 30% more token efficient). Free: unlimited autocomplete + inline edits, limited agent. Pro $20/mo, Max $200/mo. Also listed under BYOK extensions.",
+    "last_verified": "2026-06-11"
+  },
+  {
+    "name": "Trae",
+    "url": "https://www.trae.ai",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "AI-powered standalone IDE (VS Code fork) and coding assistant by ByteDance with code completion, agentic SOLO mode, and multi-model selection.",
+    "screenshot": "",
+    "models_count": 7,
+    "top_models": [
+      "Claude Sonnet 4",
+      "GPT-4o",
+      "DeepSeek R1",
+      "DeepSeek V3",
+      "Gemini 2.5 Pro",
+      "Doubao 1.5 Pro",
+      "MiniMax-M3"
+    ],
+    "capabilities": [
+      "code-generation",
+      "autocomplete",
+      "chat",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "documentation",
+      "agent"
+    ],
+    "pricing": "freemium",
+    "login_type": "github/email/bytesign",
+    "referrals": "yes - SOLO Beta Invite Code Referral Program (April 2026)",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (slow queue)",
+      "free_requests_per_month": "limited by Basic Usage allocation",
+      "autocomplete_suggestions": "5000 per month",
+      "chat_messages": "limited by Basic Usage allocation (usage-based, depends on model)",
+      "rate_limits": "Standard queue priority (slower than paid). 2 concurrent cloud tasks. Limited SOLO mode.",
+      "notes": "No credit card required. Access to Claude Sonnet 4, GPT-4o, DeepSeek R1, Gemini 2.5 Pro, Doubao 1.5 Pro for free."
+    },
+    "status": "active",
+    "rating": 3.5,
+    "tags": [
+      "trae",
+      "ai-ide",
+      "vs-code-fork",
+      "bytecode",
+      "autocomplete",
+      "agent"
+    ],
+    "platforms": ["macOS", "Windows", "Web", "iOS", "Android"],
+    "notes": "Also listed under VS Code extensions. Available as standalone IDE (macOS/Windows/Web/iOS/Android) AND VS Code/JetBrains plugin. Formerly MarsCode. Paid: Lite $3/mo, Pro $10/mo, Pro+ $30/mo, Ultra $100/mo. Privacy concerns: ByteDance telemetry, 5-year data retention. No offline mode.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Orchids",
+    "url": "https://www.orchids.app",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "AI-powered full-stack app builder/IDE that generates web, mobile, Slack bots, Chrome extensions, and AI agents from natural language. Brings your own AI subscription or API key. YC W25 startup.",
+    "screenshot": "",
+    "models_count": 4,
+    "top_models": [
+      "Orchids Agent (proprietary orchestrator)",
+      "Claude Sonnet 4.6 (paid tier)",
+      "Gemini 3.1 Pro (paid tier)",
+      "GPT-5 (paid tier)"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "full-stack-generation",
+      "deployment",
+      "git-integration"
+    ],
+    "pricing": "freemium",
+    "login_type": "email/social",
+    "referrals": "yes - affiliate program available.",
+    "free_tier_limits": {
+      "free_requests_per_day": "token-based (~100,000 tokens/day)",
+      "free_requests_per_month": "~500,000 tokens/month",
+      "rate_limits": "1 deployed project max on free. No code download/export on free. Community support only.",
+      "notes": "Brings own AI provider (uses your ChatGPT/Claude/Copilot sub or BYOK). Tokens represent ~1 word of AI output. Free tier locked — cannot export code. Free tier only has Orchids Agent (task orchestrator), not foundation models. Paid: Pro $25/mo, Premium $50/mo, Ultra $99/mo, Max $200/mo."
+    },
+    "status": "active",
+    "rating": 3,
+    "tags": [
+      "ai-ide",
+      "vibe-coding",
+      "app-builder",
+      "full-stack",
+      "yc-w25",
+      "no-code"
+    ],
+    "platforms": ["macOS", "Windows", "Linux", "Web"],
+    "notes": "Y Combinator W25 startup by Kevin Lu and Bach Tran. 'World's first AI full-stack engineer.' Ranks #1 on App Bench (76%) and UI Bench. Desktop app (Mac/Win/Linux) + web. Built-in VS Code editor, terminal, Git sync, one-click deploy. Zero proprietary foundation models — the Orchids Agent is a task orchestrator that delegates to whatever model you provide (via subscription linking: ChatGPT/Claude/Gemini/Copilot, or raw API key). Free tier only has the Orchids Agent with 100k tokens/day. Paid ($25-200/mo) adds built-in Claude Sonnet 4.6, Gemini 3.1 Pro, GPT-5. 1M+ users claimed. Users report data loss issues.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Replit",
+    "url": "https://replit.com",
+    "category": "standalone_ide",
+    "sub_category": "cloud-ide",
+    "description": "Browser-based IDE with AI Agent 4 that builds, debugs, and deploys full-stack apps from natural language. Includes hosting, database, auth, and collaboration.",
+    "screenshot": "",
+    "models_count": 7,
+    "top_models": [
+      "replit-code-v1.5-3b"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent",
+      "debugging",
+      "deployment",
+      "terminal",
+      "hosting"
+    ],
+    "pricing": "freemium",
+    "login_type": "email/github/google",
+    "referrals": "yes - referral program available.",
+    "free_tier_limits": {
+      "free_requests_per_day": "dynamic effort-based credits (daily reset up to monthly cap)",
+      "free_requests_per_month": "monthly cloud credit cap (not publicly specified)",
+      "autocomplete_suggestions": "unlimited (powered by replit-code-v1.5-3b)",
+      "chat_messages": "daily capped Agent chat (Lite mode only)",
+      "rate_limits": "1 published app (30-day expiry). Lite build only. No third-party connectors. 'Made with Replit' badge required. Web + mobile only.",
+      "notes": "Replit uses opaque effort-based pricing — exact daily credit count deliberately not published. One-time free Agent checkpoints at signup."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "replit",
+      "cloud-ide",
+      "ai-coding",
+      "hosting",
+      "online-ide"
+    ],
+    "platforms": ["Web"],
+    "notes": "Free (Starter): daily Agent credits (Lite), monthly cloud credits, 1 app (30-day expiry), watermark. Core $20/mo: $25 credits, 5 collaborators, Full build, connectors, AI Integrations. Pro $95/mo: $100 credits, 15 collaborators, Turbo mode, 10 parallel agents. AI: Agent uses Claude Sonnet 4.5, Assistant uses Gemini, completion uses replit-code-v1.5-3b.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Zed",
+    "url": "https://zed.dev",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "High-performance code editor written in Rust with GPU-accelerated rendering, built-in AI agentic editing, and real-time multiplayer collaboration. By original Atom/Tree-sitter team.",
+    "screenshot": "",
+    "models_count": 19,
+    "top_models": [
+      "Zeta2.1",
+      "Claude Sonnet 4.6",
+      "GPT-5.4",
+      "Gemini 3.5 Flash",
+      "DeepSeek",
+      "Mistral"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "terminal",
+      "collaboration"
+    ],
+    "pricing": "freemium",
+    "login_type": "github",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK)",
+      "free_requests_per_month": "unlimited (BYOK)",
+      "autocomplete_suggestions": "2,000 accepted edit predictions (Zeta2.1 powered)",
+      "chat_messages": "unlimited (BYOK)",
+      "rate_limits": "BYOK uses your own API rate limits. No Zed-imposed limits on free tier AI usage.",
+      "notes": "Free tier includes full editor, collaboration, and limited edit predictions. No Zed-hosted AI models on free. Bring your own API keys."
+    },
+    "status": "active",
+    "rating": 4.5,
+    "tags": [
+      "zed",
+      "rust",
+      "ai-ide",
+      "collaboration",
+      "high-performance"
+    ],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "notes": "Open-source (GPL editor, Apache 2.0 GPUI). Created by Nathan Sobo, Antonio Scandurra, Max Brunsfeld (ex-Atom/GitHub). Pro $10/mo ($5 AI credits). Business $30/seat/mo. Student free 1 year. Key: Zeta2.1 open-weight edit prediction, real-time multiplayer, MCP/ACP, DAP debugger, extensions ecosystem (200+), remote dev. macOS, Linux, Windows.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Kiro",
+    "url": "https://kiro.dev",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "AWS/Amazon's agentic AI IDE and CLI for spec-driven development, code generation, and autonomous agentic coding. Evolved from Amazon Q Developer CLI.",
+    "screenshot": "",
+    "models_count": 6,
+    "top_models": [
+      "Claude Sonnet 4.5",
+      "Claude Sonnet 4.0",
+      "DeepSeek 3.2",
+      "MiniMax M2.1",
+      "Qwen3 Coder Next"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "spec-driven-development",
+      "mcp-support"
+    ],
+    "pricing": "freemium",
+    "login_type": "google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (credit-based)",
+      "free_requests_per_month": "50 credits per month (credit-based, not request-based)",
+      "autocomplete_suggestions": "included in 50 credits/month",
+      "chat_messages": "consumes from 50 credits/month",
+      "rate_limits": "50 credits/month. Simple prompts <1 credit, complex tasks use more. Overage $0.04/credit.",
+      "notes": "Free tier includes Claude Sonnet 4.5 and open weight models (Qwen3 Coder Next, DeepSeek v3.2, MiniMax M2.1). No AWS account needed."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "aws",
+      "amazon",
+      "kiro",
+      "agentic-ide",
+      "spec-driven-development",
+      "code-generation",
+      "mcp"
+    ],
+    "platforms": ["macOS", "Windows", "Linux", "Web"],
+    "notes": "Also listed under CLI coding agents. AWS product from Amazon Q Developer CLI. Open source (GitHub: kirodotdev/Kiro, 3.9k stars). Available as IDE, CLI, and web. Paid: Pro $20/mo (1000 credits), Pro+ $40/mo (2000), Power $200/mo (10000).",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Codex",
+    "url": "https://github.com/openai/codex",
+    "category": "standalone_ide",
+    "sub_category": "terminal-agent",
+    "description": "OpenAI's open-source, Rust-built terminal-based coding agent that reads, edits, and runs code locally with OS-level sandboxing.",
+    "screenshot": "",
+    "models_count": 4,
+    "top_models": [
+      "GPT-5.5",
+      "GPT-5.4",
+      "GPT-5.4-mini",
+      "GPT-5.3-codex-spark"
+    ],
+    "capabilities": [
+      "code-generation",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "debugging",
+      "web-search",
+      "mcp-support"
+    ],
+    "pricing": "freemium",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "limited (ChatGPT Free plan)",
+      "free_requests_per_month": "limited (ChatGPT Free plan — very limited Codex access)",
+      "rate_limits": "ChatGPT Free: very limited. Plus: 15-80 GPT-5.5 msgs/5h. API key: usage-based. Standard $5 new account free credits apply.",
+      "notes": "ChatGPT Free plan includes limited Codex access. No free API credits specifically for Codex. Codex is a CLI tool, not a GUI IDE."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "openai",
+      "codex",
+      "cli",
+      "ai-coding",
+      "terminal",
+      "rust",
+      "open-source"
+    ],
+    "platforms": ["macOS", "Linux", "Windows"],
+    "notes": "Also listed under CLI coding agents. Open source (Apache-2.0), 90k+ GitHub stars. Requires ChatGPT account or OpenAI API key. Built in Rust. Sandboxed execution. macOS, Linux, Windows. Note: this is a CLI tool, not a GUI IDE.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Stagewise",
+    "url": "https://stagewise.io",
+    "category": "standalone_ide",
+    "sub_category": "ai-ide",
+    "description": "Open source agentic IDE for creating and orchestrating coding agents with built-in browser, app previews, and git workflows. YC S25 startup.",
+    "screenshot": "",
+    "models_count": 28,
+    "top_models": [
+      "Claude Opus 4.8",
+      "Claude Sonnet 4.6",
+      "Claude Haiku 4.5",
+      "GPT-5.5",
+      "GPT-5.4",
+      "Gemini 3.1 Pro",
+      "Gemini 3 Flash",
+      "DeepSeek V4 Pro",
+      "DeepSeek V4 Flash",
+      "Qwen 3-32B",
+      "Kimi K2.6",
+      "MiniMax M3"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "autocomplete",
+      "multi-agent-orchestration",
+      "browser-preview",
+      "git-workflows",
+      "diff-review"
+    ],
+    "pricing": "freemium",
+    "login_type": "email/social or BYOK",
+    "referrals": "unknown",
+    "free_tier_limits": {
+      "free_requests_per_day": "unknown (exact quotas unpublished)",
+      "free_requests_per_month": "limited access to all models (unpublished)",
+      "rate_limits": "Limited access to all 28+ models. 87.6% avg cache hit rate reduces effective cost. BYOK for unlimited use.",
+      "notes": "Free tier gives limited access to ALL models. BYOK can be added at any tier for unlimited usage with own API keys."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "open-source",
+      "agentic-ide",
+      "coding-agent",
+      "multi-agent",
+      "agplv3",
+      "yc-s25",
+      "browser-integrated"
+    ],
+    "platforms": ["Linux"],
+    "notes": "YC S25 startup by Glenn Tows and Julian Goetze (stagewise GmbH). AGPLv3, GitHub: 6.7k stars. Originally frontend-focused (npx stagewise), pivoted to full desktop agentic IDE May 2026. Parallel multi-agent orchestration, built-in browser engine, DOM element selection. Paid: Pro $20/mo (6x limits), Ultra $200/mo (75x). Linux DEB available (macOS/Windows coming soon).",
+    "last_verified": "2026-06-10"
+  }
+]

@@ -1,17 +1,217 @@
 ---
+import Layout from '../layouts/Layout.astro';
+import ToolCard from '../components/ToolCard.astro';
+import { allTools, toolsByCategory, stats, featuredTools } from '../data/tools';
+import { CATEGORY_META } from '../data/types';
 
+const categories = Object.values(CATEGORY_META);
+const previewSections = [
+  { cat: 'chatting_interfaces', label: 'Chat Interfaces' },
+  { cat: 'standalone_ides',     label: 'Standalone IDEs' },
+  { cat: 'api_providers',       label: 'API Providers' },
+  { cat: 'cli_coding_agents',   label: 'CLI Coding Agents' },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section class="relative overflow-hidden pt-20 pb-24 px-4 sm:px-6">
+    <!-- Background orbs -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/3 w-[700px] h-[400px] rounded-full pointer-events-none orb-animate"
+         style="background: radial-gradient(ellipse, rgba(80,56,214,0.12) 0%, transparent 70%); filter: blur(48px);"></div>
+    <div class="absolute top-32 right-[5%] w-72 h-72 rounded-full pointer-events-none"
+         style="background: radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%); filter: blur(60px);"></div>
+    <div class="absolute bottom-0 left-[10%] w-64 h-48 rounded-full pointer-events-none"
+         style="background: radial-gradient(ellipse, rgba(16,185,129,0.06) 0%, transparent 70%); filter: blur(48px);"></div>
+
+    <div class="relative max-w-4xl mx-auto text-center">
+      <!-- Status badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium mb-7 hero-animate hero-animate-1 badge-float"
+           style="background: var(--accent-light); border: 1px solid rgba(80,56,214,0.2); color: var(--accent-primary);">
+        <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background: var(--accent-primary);"></span>
+        {stats.totalTools} tools · Verified June 2026
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-5xl lg:text-[3.75rem] font-bold tracking-tight leading-[1.08] mb-5 hero-animate hero-animate-2"
+          style="color: var(--text-primary); letter-spacing: -0.03em;">
+        Discover the Best<br />
+        <span class="text-gradient-accent">Free AI Tools</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-9 hero-animate hero-animate-3"
+         style="color: var(--text-tertiary);">
+        A curated, verified directory of <strong style="color: var(--text-secondary);">{stats.totalTools} free AI tools</strong> across
+        {stats.totalCategories} categories — chat, image, audio, music, video, coding, APIs, and more.
+        No paywalls, no noise.
+      </p>
+
+      <!-- Hero search -->
+      <div class="flex justify-center mb-12 hero-animate hero-animate-4">
+        <button id="hero-search-btn"
+          class="flex items-center gap-3 w-full max-w-[480px] px-4 py-3.5 rounded-xl text-sm text-left transition-all duration-300 group"
+          style="background: var(--bg-surface); border: 1px solid var(--border-strong); box-shadow: var(--shadow-elevated); color: var(--text-muted);">
+          <svg width="16" height="16" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="6" cy="6" r="4.5"/><path d="M10 10l2.5 2.5"/>
+          </svg>
+          <span class="flex-1 transition-colors" style="color: var(--text-muted);">Search by name, capability, or model…</span>
+          <kbd class="flex items-center gap-0.5 px-1.5 py-0.5 rounded text-xs shrink-0"
+               style="background: var(--bg-muted); color: var(--text-muted); font-family:inherit;">⌘K</kbd>
+        </button>
+      </div>
+
+      <!-- Stats row -->
+      <div class="flex flex-wrap items-center justify-center gap-8 hero-animate hero-animate-5">
+        {[
+          { label: 'Free AI Tools',  value: stats.totalTools,          color: 'var(--accent-primary)' },
+          { label: 'Categories',     value: stats.totalCategories,     color: 'var(--text-primary)' },
+          { label: 'Active Now',     value: stats.activeTools,         color: 'var(--text-primary)' },
+        ].map(({ label, value, color }) => (
+          <div class="text-center">
+            <p class="text-3xl font-bold tabular-nums" style={`color: ${color}; letter-spacing: -0.04em;`}>{value}</p>
+            <p class="text-xs mt-0.5" style="color: var(--text-muted);">{label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CATEGORIES
+  ══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex items-center justify-between mb-5" data-motion="left">
+      <h2 class="section-title">Browse by Category</h2>
+      <a href="/categories" class="btn btn-ghost text-sm">
+        All categories
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <path d="M2 6h8M6 2l4 4-4 4"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 stagger-grid">
+      {categories.map((meta) => {
+        const count = toolsByCategory[meta.id]?.length ?? 0;
+        return (
+          <a href={`/category/${meta.id}`} class="category-card group">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3 relative overflow-hidden"
+                 style={`background: ${meta.gradient}; border: 1px solid var(--border-default);`}>
+              {meta.icon}
+              <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 55%);"></div>
+            </div>
+            <h3 class="text-sm font-semibold mb-1 leading-tight" style="color: var(--text-primary);">{meta.label}</h3>
+            <p class="text-xs line-clamp-2 mb-3" style="color: var(--text-tertiary);">{meta.description}</p>
+            <div class="flex items-center justify-between">
+              <span class="text-xs" style="color: var(--text-muted);">{count} tools</span>
+              <span class="flex items-center gap-1 text-xs font-medium transition-colors group-hover:translate-x-0.5 duration-200"
+                    style="color: var(--accent-primary);">
+                Explore
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                  <path d="M2 5h6M5 2l3 3-3 3"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+
+  <hr class="divider max-w-7xl mx-auto" />
+
+  <!-- ══════════════════════════════════════════
+       TOP RATED
+  ══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 py-14">
+    <div class="flex items-center justify-between mb-6" data-motion="left">
+      <div>
+        <h2 class="section-title">Top Rated Tools</h2>
+        <p class="text-sm mt-1" style="color: var(--text-muted);">Highest rated across all categories</p>
+      </div>
+      <a href="/explore" class="btn btn-ghost text-sm">
+        Explore all
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 6h8M6 2l4 4-4 4"/></svg>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 stagger-grid">
+      {featuredTools.map((tool) => <ToolCard tool={tool} />)}
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CATEGORY PREVIEWS
+  ══════════════════════════════════════════ -->
+  {previewSections.map(({ cat, label }) => {
+    const catMeta = CATEGORY_META[cat];
+    const tools = (toolsByCategory[cat] ?? []).filter(t => t.status === 'active').slice(0, 4);
+    if (!tools.length) return null;
+    return (
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+        <hr class="divider mb-10" />
+        <div class="flex items-center justify-between mb-6" data-motion="left">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl flex items-center justify-center text-lg relative overflow-hidden"
+                 style={`background: ${catMeta.gradient}; border: 1px solid var(--border-default);`}>
+              {catMeta.icon}
+              <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 55%);"></div>
+            </div>
+            <h2 class="section-title">{label}</h2>
+          </div>
+          <a href={`/category/${cat}`} class="text-sm flex items-center gap-1 transition-colors"
+             style="color: var(--text-muted);"
+             onmouseover="this.style.color='var(--accent-primary)'"
+             onmouseout="this.style.color='var(--text-muted)'">
+            View all ({toolsByCategory[cat]?.length ?? 0})
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 6h8M6 2l4 4-4 4"/></svg>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 stagger-grid">
+          {tools.map((tool) => <ToolCard tool={tool} />)}
+        </div>
+      </section>
+    );
+  })}
+
+  <!-- ══════════════════════════════════════════
+       CTA BANNER
+  ══════════════════════════════════════════ -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-20">
+    <div class="rounded-3xl p-10 sm:p-14 relative overflow-hidden text-center"
+         style="background: var(--bg-surface); border: 1px solid var(--border-default); box-shadow: var(--shadow-elevated);"
+         data-motion="scale">
+      <!-- Accent glow -->
+      <div class="absolute inset-0 pointer-events-none"
+           style="background: radial-gradient(ellipse 60% 80% at 50% 50%, var(--accent-glow) 0%, transparent 70%);"></div>
+      <!-- Grid pattern -->
+      <div class="absolute inset-0 pointer-events-none opacity-30"
+           style="background-image: linear-gradient(var(--border-default) 1px, transparent 1px), linear-gradient(90deg, var(--border-default) 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+      <div class="relative">
+        <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--accent-primary);">Ready to explore?</p>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4" style="color: var(--text-primary); letter-spacing: -0.03em;">
+          {stats.totalTools} Free AI Tools.
+        </h2>
+        <p class="max-w-md mx-auto mb-7 text-sm leading-relaxed" style="color: var(--text-tertiary);">
+          Browse every tool, filter by capability, and find exactly what you need in seconds.
+        </p>
+        <a href="/explore" class="btn btn-primary text-sm">
+          Explore All Tools
+          <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M2 7h10M7 2l5 5-5 5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.getElementById('hero-search-btn')?.addEventListener('click', () => {
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true, ctrlKey: true, bubbles: true }));
+  });
+</script>

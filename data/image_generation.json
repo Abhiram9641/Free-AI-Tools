@@ -1,0 +1,728 @@
+{
+  "category": "image_generation",
+  "last_updated": "2026-06-10",
+  "tools": [
+    {
+      "name": "Arena (LMArena)",
+      "url": "https://arena.ai",
+      "category": "image_generation",
+      "sub_category": "arena",
+      "description": "Community-powered platform for comparing image generators via anonymous head-to-head battles. 70 image models available.",
+      "screenshot": "",
+      "models_count": 70,
+      "top_models": [
+        "ideogram-4.0-quality",
+        "hunyuan-image-3.0",
+        "flux-2-dev",
+        "qwen-image-2512",
+        "hidream-o1-image",
+        "z-image-turbo",
+        "flux-2-klein-9b"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "style-control",
+        "battle-mode-comparison",
+        "leaderboard-rankings"
+      ],
+      "pricing": "free",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 5,
+      "tags": [
+        "image-generation",
+        "comparison",
+        "leaderboard",
+        "open-source",
+        "free"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "undisclosed (daily limit exists, exact number not published)",
+        "free_images_per_week": null,
+        "free_images_per_month": null,
+        "credits_per_image": "new unified credit system in development",
+        "free_credits": "daily balance (amount not disclosed)",
+        "credit_expiry": "resets every 24 hours",
+        "rate_limits": "Daily usage limit; auto-resets after 24h"
+      },
+      "notes": "All 70 image models free in Battle Mode via anonymous comparisons. Direct Mode requires account. Created by UC Berkeley researchers.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "ChatGPT",
+      "url": "https://chatgpt.com",
+      "category": "image_generation",
+      "sub_category": "chat_with_image_gen",
+      "description": "AI chatbot with integrated image generation via GPT-Image-1.5 and DALL-E 3. Free tier allows 2-3 images per 24h.",
+      "screenshot": "",
+      "models_count": 3,
+      "top_models": [
+        "GPT-Image-1.5",
+        "DALL-E 3",
+        "GPT-4o (native image gen)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "style-transfer",
+        "text-rendering",
+        "background-transparency"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "image-generation",
+        "dalle",
+        "gpt-image",
+        "popular"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "2-3",
+        "free_images_per_week": "~14-21",
+        "free_images_per_month": "~60-90",
+        "credits_per_image": "no credit system — rolling window limit",
+        "free_credits": "N/A",
+        "credit_expiry": "24-hour rolling window per image (independent timer)",
+        "rate_limits": "2-3 images per 24h rolling window. Separate timer from text messages."
+      },
+      "notes": "Free tier: 2-3 images/day (24h rolling window). Same model quality as paid — only quantity differs. GPT-Image-1.5 offers 4x faster gen over DALL-E 3.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Gemini",
+      "url": "https://gemini.google.com",
+      "category": "image_generation",
+      "sub_category": "multimodal_assistant",
+      "description": "Google's AI assistant with built-in image generation via Nano Banana models. Free tier offers ~20 images/day.",
+      "screenshot": "",
+      "models_count": 2,
+      "top_models": [
+        "Nano Banana 2 (Gemini 3.1 Flash Image)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "style-transfer",
+        "text-rendering",
+        "reference-image-blending"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "google",
+        "nano-banana",
+        "text-to-image",
+        "free-tier"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~20",
+        "free_images_per_week": "~140",
+        "free_images_per_month": "~600",
+        "credits_per_image": "no credit system — daily cap",
+        "free_credits": "N/A",
+        "credit_expiry": "resets daily",
+        "rate_limits": "~20 images/day with Nano Banana 2 only. May be demoted to slower model at cap."
+      },
+      "notes": "Free tier: Nano Banana 2 only, ~20 images/day, 1K max resolution. Nano Banana Pro requires paid plan ($7.99+/mo). All images include SynthID watermark.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Meta AI",
+      "url": "https://meta.ai",
+      "category": "image_generation",
+      "sub_category": "chat_with_image_gen",
+      "description": "Free AI image generation powered by Emu model, integrated across WhatsApp, Instagram, Messenger, and Facebook.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "Emu (Expressive Media Universe)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "image-restyling",
+        "image-animation",
+        "background-removal"
+      ],
+      "pricing": "free",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 3,
+      "tags": [
+        "image-generation",
+        "free",
+        "meta",
+        "social-media"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "25",
+        "free_images_per_week": "~175",
+        "free_images_per_month": "~750",
+        "credits_per_image": "no credit system — free with watermark",
+        "free_credits": "N/A",
+        "credit_expiry": "N/A — always free",
+        "rate_limits": "25 images/day via Imagine feature. Each prompt produces 4 options. Resets daily."
+      },
+      "notes": "Completely free, no paid tier required for image gen. Max resolution ~1280x1280. Watermarked outputs. Regional availability varies.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Grok",
+      "url": "https://grok.com",
+      "category": "image_generation",
+      "sub_category": "chat_with_image_gen",
+      "description": "xAI's Grok Imagine generates images via Aurora model. Free tier removed March 2026 — requires SuperGrok ($30/mo).",
+      "screenshot": "",
+      "models_count": 2,
+      "top_models": [
+        "grok-imagine-image ($0.02/image via API)",
+        "grok-imagine-image-quality ($0.07/image via API)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "multi-image-editing",
+        "style-transfer",
+        "image-to-video"
+      ],
+      "pricing": "paid",
+      "login_type": "google",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "image-generation",
+        "aurora-model",
+        "paid-only"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "0 (free tier removed March 2026)",
+        "free_images_per_week": null,
+        "free_images_per_month": null,
+        "credits_per_image": "API: $0.02 standard, $0.07 quality",
+        "free_credits": "$25 at signup + $150/mo via data-sharing (API only)",
+        "credit_expiry": "API credits expire after use",
+        "rate_limits": "SuperGrok ($30/mo) required for consumer image gen"
+      },
+      "notes": "Free image gen removed March 19, 2026 (deepfake controversy). SuperGrok ($30/mo) required. API: $25 free credits at signup + $150/mo via data-sharing.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Leonardo AI",
+      "url": "https://leonardo.ai",
+      "category": "image_generation",
+      "sub_category": "image_platform",
+      "description": "Production-grade generative AI platform for images, video, and 3D textures with custom model training, AI Canvas editing, and game asset workflows. Acquired by Canva in 2024.",
+      "screenshot": "",
+      "models_count": 12,
+      "top_models": [
+        "Phoenix 2.0",
+        "Leonardo Diffusion XL",
+        "Leonardo Lightning XL",
+        "Leonardo Anime XL",
+        "Leonardo Kino XL",
+        "Leonardo Vision XL",
+        "Lucid Origin"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-to-image",
+        "inpainting",
+        "outpainting",
+        "realtime-canvas",
+        "motion-generation",
+        "3D-texture-generation",
+        "upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4.6,
+      "tags": [
+        "image-generation",
+        "game-assets",
+        "custom-models",
+        "3d-textures",
+        "canva"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~30 (150 tokens, ~5 tokens per image)",
+        "free_images_per_week": "~210",
+        "free_images_per_month": "~900",
+        "credits_per_image": "~5 tokens per image (varies by model/resolution)",
+        "free_credits": "150 fast tokens/day (no rollover)",
+        "credit_expiry": "tokens reset daily — unused tokens do NOT roll over",
+        "rate_limits": "150 tokens/day. Basic quality only. Public generations only. No private images."
+      },
+      "notes": "Free tier: 150 tokens/day, public images only, 1 concurrent gen. Paid plans start $12/mo. 29M+ users. Full commercial rights.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "NoteGPT",
+      "url": "https://notegpt.io",
+      "category": "image_generation",
+      "sub_category": "ai_learning_assistant",
+      "description": "All-in-one AI learning assistant with text-to-image, image editing, headshot generation, and 15+ image tools. Free tier includes 2 images/day.",
+      "screenshot": "",
+      "models_count": 5,
+      "top_models": [
+        "Nano Banana (Gemini 3 Flash Image)",
+        "GPT Image 2 (OpenAI)",
+        "Nano Banana 2",
+        "Seedream 5.0"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-to-image",
+        "image-editing",
+        "headshot-generation",
+        "background-removal",
+        "image-upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "image-generation",
+        "headshot-generator",
+        "free-tier",
+        "learning"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~0-2 (shared from 15 monthly quota)",
+        "free_images_per_week": "~3-4",
+        "free_images_per_month": "15 total quotas for ALL features (images share pool)",
+        "credits_per_image": "2 premium credits per image (free plan gives NO premium credits)",
+        "free_credits": "15 basic quotas/month (NOT premium credits)",
+        "credit_expiry": "Monthly reset",
+        "rate_limits": "Shared quota across summarization, transcription, chat, images"
+      },
+      "notes": "Free tier: 15 total quotas/month, 2 free images/day. Pro $9.99/mo (50 imgs), Unlimited $29/mo (700 imgs), Max $99/mo (2500 imgs).",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Microsoft Designer",
+      "url": "https://designer.microsoft.com",
+      "category": "image_generation",
+      "sub_category": "design_tool",
+      "description": "AI-powered graphic design tool that creates professional visuals from text prompts using DALL-E 3, integrated into Microsoft 365.",
+      "screenshot": "",
+      "models_count": 1,
+      "top_models": [
+        "DALL-E 3"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "design-templates",
+        "background-removal",
+        "collage-making"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4.2,
+      "tags": [
+        "design",
+        "dalle",
+        "microsoft",
+        "templates",
+        "social-media"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "15 fast (boosted) + unlimited slow (up to 200 prompts/day)",
+        "free_images_per_week": "~105 fast + unlimited slow",
+        "free_images_per_month": "~450 fast + unlimited slow",
+        "credits_per_image": "1 boost per fast generation (no cost for standard speed)",
+        "free_credits": "15 boosts/day (resets daily)",
+        "credit_expiry": "Resets every 24 hours",
+        "rate_limits": "200 prompts per 24-hour period. After 15 fast, auto-switches to slower speed."
+      },
+      "notes": "Free tier: 15 boosts/day. Copilot Pro ($20/mo) gives 100 boosts/day. DALL-E 3 only model. Integrated with Microsoft 365.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Ideogram",
+      "url": "https://ideogram.ai",
+      "category": "image_generation",
+      "sub_category": "image_platform",
+      "description": "AI image generation platform with state-of-the-art text rendering, photorealism, and layout control. Open-weight models (Ideogram 4.0).",
+      "screenshot": "",
+      "models_count": 7,
+      "top_models": [
+        "Ideogram 4.0 Turbo",
+        "Ideogram 4.0 Default",
+        "Ideogram 3.0 Flash",
+        "Ideogram 3.0 Turbo",
+        "Ideogram 3.0 Default"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "typography",
+        "background-removal",
+        "style-references",
+        "character-consistency",
+        "upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "text-rendering",
+        "open-source",
+        "design",
+        "photorealism"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "10 slow credits (up to 4 variations each = ~40 images)",
+        "free_images_per_week": "~70 slow credits (= ~280 images)",
+        "free_images_per_month": "~300 slow credits (= ~1,200 images)",
+        "credits_per_image": "1 credit per prompt (generates up to 4 variations)",
+        "free_credits": "10 slow credits/day",
+        "credit_expiry": "Daily reset (weekly allocation resets Saturday 00:00 UTC)",
+        "rate_limits": "Slow queue only (30-60 sec per image). All images PUBLIC on free tier."
+      },
+      "notes": "Free plan: 10 slow credits/week (~40 imgs/week), 1 concurrent gen. All models available on free tier (slow queue). Plus $20/mo, Pro $60/mo.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Playground AI",
+      "url": "https://playground.com",
+      "category": "image_generation",
+      "sub_category": "ai_design_platform",
+      "description": "AI design studio for logos, merch, posters, stickers, and social media. Text-to-print-ready designs with mockup generation.",
+      "screenshot": "",
+      "models_count": 5,
+      "top_models": [
+        "Playground v3 (PGv3)",
+        "GPT Image 2",
+        "Nano Banana",
+        "Seedream"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "design-templates",
+        "mockup-generation",
+        "logo-creation",
+        "background-removal",
+        "upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "design",
+        "logos",
+        "merch",
+        "print-ready",
+        "templates"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~80 (10 imgs per 3-hour window)",
+        "free_images_per_week": "~560",
+        "free_images_per_month": "~2,400",
+        "credits_per_image": "no credits system — time-window rate limiting",
+        "free_credits": "N/A",
+        "credit_expiry": "N/A",
+        "rate_limits": "10 images per 3-hour rolling window. 3 combined edits/month. 10 downloads/day."
+      },
+      "notes": "Free tier: PGv3 10 imgs/3hrs, GPT Image 2/Seedream/Nano Banana 3 gens/month, 10 downloads/day. 13M+ creators. Non-commercial on free tier.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Bing Image Creator",
+      "url": "https://www.bing.com/images/create",
+      "category": "image_generation",
+      "sub_category": "image_creator",
+      "description": "Microsoft's free AI image generator powered by multiple models (DALL-E 3, GPT-4o, MAI-Image-2e). Daily free fast creations.",
+      "screenshot": "",
+      "models_count": 3,
+      "top_models": [
+        "MAI-Image-2e",
+        "GPT-4o",
+        "DALL-E 3 (retiring soon)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "image-enhancement",
+        "background-removal",
+        "image-expansion",
+        "video-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "microsoft",
+        "bing",
+        "dall-e",
+        "free",
+        "copilot"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "15 fast + unlimited slow (up to 200 prompts/day)",
+        "free_images_per_week": "~105 fast + unlimited slow",
+        "free_images_per_month": "~450 fast + unlimited slow",
+        "credits_per_image": "1 boost per fast generation (no cost for standard speed)",
+        "free_credits": "15 fast boosts/day (resets daily)",
+        "credit_expiry": "Resets every 24 hours",
+        "rate_limits": "200 prompts per 24-hour period. DALL-E 3 produces 4 images/prompt, GPT-4o produces 1."
+      },
+      "notes": "DALL-E 3 retiring soon. 15 free fast creations/day, unlimited standard-speed, 200 prompts/24hr cap. Requires personal Microsoft Account. Blocked in Russia/China.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "SparkPix",
+      "url": "https://sparkpix.ai",
+      "category": "image_generation",
+      "sub_category": "image_creator_photo_editor",
+      "description": "Free AI photo editor and image generator with 100+ tools. Text-to-image in ~3s, no watermark, free commercial use.",
+      "screenshot": "",
+      "models_count": 3,
+      "top_models": [
+        "SparkPix Proprietary Model"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-to-image",
+        "photo-editing",
+        "background-removal",
+        "object-removal",
+        "style-transfer",
+        "upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "photo-editor",
+        "free",
+        "no-watermark",
+        "commercial-use"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "3 (image generator) + 1 via daily credit",
+        "free_images_per_week": "~21",
+        "free_images_per_month": "~90",
+        "credits_per_image": "5 credits per AI photo edit; image generator is 3 free/day separate",
+        "free_credits": "5 welcome credits on signup + 1 free credit/day",
+        "credit_expiry": "Credits do not appear to expire",
+        "rate_limits": "3 free image generations per day on AI Image Generator page"
+      },
+      "notes": "Free tier: 3 watermark-free images/day + 5 welcome credits. 800k+ users. Paid: $9.99 for 350 credits, $29.99 for 1200 credits.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Canva AI",
+      "url": "https://canva.com",
+      "category": "image_generation",
+      "sub_category": "design_tool",
+      "description": "All-in-one design platform with AI image generators: Magic Media (Stable Diffusion) and Dream Lab (Leonardo.ai). Generates layered, editable designs.",
+      "screenshot": "",
+      "models_count": 4,
+      "top_models": [
+        "Magic Media (Stable Diffusion)",
+        "Dream Lab (Canva Design Model / Leonardo.ai)"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "style-transfer",
+        "image-upscaling",
+        "image-editing",
+        "design-templates",
+        "layer-decomposition",
+        "image-to-video",
+        "logo-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - refer-a-friend earns 1 Canva credit per referral for premium elements.",
+      "status": "active",
+      "rating": 3.5,
+      "tags": [
+        "design",
+        "templates",
+        "all-in-one",
+        "leonardo-ai"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~6-7 (from 50 monthly credits ÷ 30 days)",
+        "free_images_per_week": "~42",
+        "free_images_per_month": "up to 200 Standard AI uses OR 20 Premium AI uses (shared across all AI tools)",
+        "credits_per_image": "uses AI allowance pool, not fixed per-image credits",
+        "free_credits": "50 AI credits/month (shared Standard & Premium)",
+        "credit_expiry": "resets 1st of each month (unused credits do NOT roll over)",
+        "rate_limits": "200 max Standard AI uses OR 20 max Premium AI uses per month. No Ultra AI on free."
+      },
+      "notes": "Free tier: 200 Standard AI or 20 Premium AI uses/month. Dream Lab free ~20 prompts/month. Third-party models (DALL-E, Imagen) are Premium only. Pro $15/mo.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Adobe Firefly",
+      "url": "https://firefly.adobe.com",
+      "category": "image_generation",
+      "sub_category": "ai_creative_studio",
+      "description": "Adobe's all-in-one creative AI studio for images, video, audio, and vectors. Commercially safe, trained on licensed content.",
+      "screenshot": "",
+      "models_count": 10,
+      "top_models": [
+        "Firefly Image 5",
+        "Gemini 3.1 (Nano Banana 2)",
+        "GPT Image 1.5",
+        "FLUX.2 [pro]",
+        "Kling AI"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-editing",
+        "generative-fill",
+        "text-to-video",
+        "image-to-video",
+        "sound-effect-generation",
+        "vector-generation"
+      ],
+      "pricing": "freemium",
+      "login_type": "email",
+      "referrals": "yes - Adobe Affiliate Program 85% of first month. No Firefly-specific referral.",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "adobe",
+        "commercial-safe",
+        "creative-ai",
+        "multi-model"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "~1 (25 credits/month ÷ 30 days)",
+        "free_images_per_week": "~5-6",
+        "free_images_per_month": "25 standard images (1024x1024) OR 5 HD images (2048x2048)",
+        "credits_per_image": "1 credit per standard gen, 5 credits per HD gen, 1 credit per edit",
+        "free_credits": "25 generative credits/month",
+        "credit_expiry": "expire one month from allocation date (use on 15th → expire 15th next month)",
+        "rate_limits": "25 credits/month hard cap. Credits reset based on first-use date."
+      },
+      "notes": "Free tier: 25 credits/month. Paid: Standard $9.99/mo (2K credits), Pro $19.99/mo (4K credits), Premium $199.99/mo (50K credits). Commercial use strongest on paid plans.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "NightCafe",
+      "url": "https://nightcafe.studio",
+      "category": "image_generation",
+      "sub_category": "art_generator",
+      "description": "AI Art Generator with 50+ image/video models, daily free credits, art challenges, and vibrant creator community. 30M+ users.",
+      "screenshot": "",
+      "models_count": 15,
+      "top_models": [
+        "Stable Diffusion 1.5",
+        "SDXL 1.0",
+        "Flux 2 Klein",
+        "Z-Image Turbo",
+        "Flux 1 Schnell",
+        "DreamShaper v8",
+        "Realistic Vision V5.1"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "image-to-video",
+        "consistent-characters",
+        "image-editing",
+        "style-transfer",
+        "creative-upscaling"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "yes - give friends 20 free PRO creations, earn credits as they progress.",
+      "status": "active",
+      "rating": 4.7,
+      "tags": [
+        "ai-art",
+        "community",
+        "stable-diffusion",
+        "flux",
+        "daily-challenges"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "5-15 (5 daily credits + 3 from challenge; SD costs 0.5-1 credit)",
+        "free_images_per_week": "35-105",
+        "free_images_per_month": "~150-450",
+        "credits_per_image": "0.5-1 credit (SD), 1-2 credits (SDXL), 2-4 credits (DALL-E/Flux)",
+        "free_credits": "5 credits/day on login + up to 3 from daily challenge + 10 bonus every 5-day streak",
+        "credit_expiry": "Free (relax) credits do NOT expire — they accumulate",
+        "rate_limits": "Free users: free-tier models only. Relax credits at lower priority. No hard cap on base SD."
+      },
+      "notes": "Free tier: 5 credits/day + 3 from challenges + unlimited base SD generations. Commercial use allowed. Paid from $5.99/mo. 40% annual discount.",
+      "last_verified": "2026-06-10"
+    },
+    {
+      "name": "Google Flow",
+      "url": "https://labs.google/fx/tools/flow",
+      "category": "image_generation",
+      "sub_category": "creative_studio",
+      "description": "AI creative studio for images, videos, and custom tools. Merged Whisk AI + ImageFX + Flow into one workspace. Powered by Nano Banana, Veo 3.1, Gemini Omni.",
+      "screenshot": "",
+      "models_count": 3,
+      "top_models": [
+        "Nano Banana Pro",
+        "Nano Banana 2",
+        "Gemini Omni Flash"
+      ],
+      "capabilities": [
+        "text-to-image",
+        "text-to-video",
+        "frames-to-video",
+        "video-extension",
+        "image-editing",
+        "custom-tool-building",
+        "scenebuilder"
+      ],
+      "pricing": "freemium",
+      "login_type": "google",
+      "referrals": "no",
+      "status": "active",
+      "rating": 4,
+      "tags": [
+        "google",
+        "image-generation",
+        "video-generation",
+        "nano-banana",
+        "veo",
+        "creative-studio"
+      ],
+      "free_tier_limits": {
+        "free_images_per_day": "Unlimited (Nano Banana 2 & Pro cost 0 credits)",
+        "free_images_per_week": "Unlimited",
+        "free_images_per_month": "Unlimited",
+        "credits_per_image": "0 credits for image gen. Credits only for video (Veo 3.1).",
+        "free_credits": "50 daily credits (for video generation only)",
+        "credit_expiry": "daily credits expire end of day — no rollover",
+        "rate_limits": "After many generations, speed may decrease. Image gen appears unlimited."
+      },
+      "notes": "Most generous free IMAGE generator — unlimited images, no watermarks, Nano Banana Pro free. 50 daily credits for video only. One-time 100 welcome credits. Paid from $4.99/mo.",
+      "last_verified": "2026-06-10"
+    }
+  ]
+}

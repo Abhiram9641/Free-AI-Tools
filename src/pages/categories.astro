@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { toolsByCategory } from '../data/tools';
+import { CATEGORY_META } from '../data/types';
+
+const categories = Object.values(CATEGORY_META);
+---
+
+<Layout
+  title="AI Tool Categories — FreeLM"
+  description="Browse AI tools by category: chat, image, audio, music, video, coding, IDEs, and APIs."
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-20">
+    <div class="mb-9" data-motion="left">
+      <h1 class="text-3xl font-bold mb-2" style="color: var(--text-primary); letter-spacing: -0.03em;">All Categories</h1>
+      <p class="text-sm" style="color: var(--text-tertiary);">Find the right AI tool for every use case</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 stagger-grid">
+      {categories.map((meta) => {
+        const tools = toolsByCategory[meta.id] ?? [];
+        const freeCount = tools.filter(t => t.pricing === 'free').length;
+        const freemiumCount = tools.filter(t => t.pricing === 'freemium').length;
+        return (
+          <a href={`/category/${meta.id}`} class="category-card group">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl relative overflow-hidden shrink-0"
+                   style={`background: ${meta.gradient}; border: 1px solid var(--border-default);`}>
+                {meta.icon}
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 55%);"></div>
+              </div>
+              <div>
+                <h2 class="font-semibold mb-1" style="color: var(--text-primary);">{meta.label}</h2>
+                <p class="text-xs leading-relaxed line-clamp-2" style="color: var(--text-tertiary);">{meta.description}</p>
+              </div>
+            </div>
+
+            <div class="flex gap-5 pt-4" style="border-top: 1px solid var(--border-default);">
+              <div>
+                <p class="text-xl font-bold" style="color: var(--text-primary);">{tools.length}</p>
+                <p class="text-xs" style="color: var(--text-muted);">total</p>
+              </div>
+              <div>
+                <p class="text-xl font-bold" style="color: #16a34a;">{freeCount}</p>
+                <p class="text-xs" style="color: var(--text-muted);">free</p>
+              </div>
+              <div>
+                <p class="text-xl font-bold" style="color: var(--accent-primary);">{freemiumCount}</p>
+                <p class="text-xs" style="color: var(--text-muted);">freemium</p>
+              </div>
+              <div class="ml-auto flex items-center gap-1 text-xs font-medium self-end group-hover:translate-x-0.5 transition-transform"
+                   style="color: var(--accent-primary);">
+                Browse
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M2 5h6M5 2l3 3-3 3"/></svg>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</Layout>

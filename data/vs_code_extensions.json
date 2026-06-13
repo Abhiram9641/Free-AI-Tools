@@ -1,0 +1,403 @@
+[
+  {
+    "name": "Trae",
+    "url": "https://www.trae.ai",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "AI-powered coding assistant and VS Code fork by ByteDance offering code completion, agentic SOLO mode, and multi-model selection for free.",
+    "screenshot": "",
+    "models_count": 7,
+    "top_models": [
+      "Claude Sonnet 4",
+      "GPT-4o",
+      "DeepSeek R1",
+      "DeepSeek V3",
+      "Gemini 2.5 Pro",
+      "Doubao 1.5 Pro",
+      "MiniMax-M3"
+    ],
+    "capabilities": [
+      "code-generation",
+      "autocomplete",
+      "chat",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "documentation",
+      "agent"
+    ],
+    "pricing": "freemium",
+    "login_type": "github/email/bytesign",
+    "referrals": "yes - SOLO Beta Invite Code Referral Program (launched April 2026)",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (slow queue)",
+      "free_requests_per_month": "limited by Basic Usage allocation (exact token count not published)",
+      "autocomplete_suggestions": "5000 per month",
+      "chat_messages": "limited by Basic Usage allocation (usage-based, depends on model)",
+      "rate_limits": "Standard queue priority (slower than paid); 2 concurrent cloud tasks; limited SOLO mode",
+      "notes": "No credit card required. Free tier includes access to Claude Sonnet 4, GPT-4o, DeepSeek R1, Gemini 2.5 Pro, and more. Paid tiers: Lite $3/mo, Pro $10/mo, Pro+ $30/mo, Ultra $100/mo."
+    },
+    "status": "active",
+    "rating": 3.5,
+    "tags": [
+      "autocomplete",
+      "chat",
+      "code-generation",
+      "agent",
+      "multi-model",
+      "vs-code-extension",
+      "ide",
+      "bytecode"
+    ],
+    "notes": "Free tier gives access to Claude Sonnet 4, GPT-4o, DeepSeek R1, Gemini 2.5 Pro, and ByteDance's Doubao 1.5 Pro at no cost with no API key. Formerly rebranded from MarsCode. Available as standalone IDE (VS Code fork, macOS/Windows/Web/iOS/Android) and VS Code/JetBrains plugin. Privacy concerns: ByteDance telemetry with 5-year data retention. No offline mode. MCP protocol and custom agents supported.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Kilo Code",
+    "url": "https://kilo.ai",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open-source AI coding agent for VS Code, JetBrains, and CLI with 500+ model support, orchestrator mode, and BYOK. Fork of Roo Code.",
+    "screenshot": "",
+    "models_count": 500,
+    "top_models": [
+      "GLM 4.7",
+      "MiniMax M2.1"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent"
+    ],
+    "pricing": "freemium",
+    "login_type": "email",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "unlimited",
+      "autocomplete_suggestions": "included in free tier",
+      "chat_messages": "unlimited",
+      "rate_limits": "No hard rate limits. Free tier routes through Auto Free using GLM 4.7 or MiniMax M2.1 via Kilo Gateway.",
+      "notes": "Free tier provides two frontier models at no cost (GLM 4.7, MiniMax M2.1). No credit card required. BYOK to any provider and pay nothing to Kilo. New users get $20 free credits for paid model tiers."
+    },
+    "status": "active",
+    "rating": 4.0,
+    "tags": [
+      "ai-coding-agent",
+      "open-source",
+      "vs-code-extension",
+      "copilot-alternative",
+      "jetbrains",
+      "cli"
+    ],
+    "notes": "Fork of Cline and Roo Code. Apache-2.0 license. 500+ models across 60+ providers via OpenRouter + direct integrations. Zero markup on model costs. Orchestrator mode with Architect/Code/Debug agents. Teams $15/user/mo. 3M+ users. 1.19M VS Code installs. GitHub: 11.9k stars.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Gemini Code Assist",
+    "url": "https://marketplace.visualstudio.com/items?itemName=Google.geminicodeassist",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-assistant",
+    "description": "Official Google VS Code extension for AI-assisted development powered by Gemini models with 1M token context window.",
+    "screenshot": "",
+    "models_count": 2,
+    "top_models": [
+      "Gemini 2.5 Flash (free tier)"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "agent-mode",
+      "test-generation"
+    ],
+    "pricing": "freemium",
+    "login_type": "google",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "1000 (combined agent mode + Gemini CLI requests per user per day)",
+      "free_requests_per_month": "~30,000 (based on 1000/day)",
+      "autocomplete_suggestions": "unlimited inline completions while typing",
+      "chat_messages": "counted within 1000/day limit",
+      "rate_limits": "Daily cap of 1000 requests resets each day. No credit card required.",
+      "notes": "Free tier (individuals) requires Google account login, no API key needed. Uses Gemini 2.5 model. Agent mode and Gemini CLI share the same 1000/day quota."
+    },
+    "status": "active (free tier deprecated — migrating to Antigravity by June 18, 2026)",
+    "rating": 2,
+    "tags": [
+      "gemini",
+      "google",
+      "ai-coding-assistant",
+      "code-completion",
+      "agent-mode",
+      "ide-extension"
+    ],
+    "notes": "CRITICAL: Google announced Gemini Code Assist free tier will stop serving requests starting June 18, 2026. Users must migrate to Antigravity. Paid Standard ($22.80/user/month) and Enterprise ($54/user/month) remain. Formerly called 'Duet AI for Developers'. Rating 2/5 based on 796 reviews (slow responses, bugs). Note: there is an unrelated third-party 'Gemini Assistant' by Bini on marketplace.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Amazon Q Developer",
+    "url": "https://aws.amazon.com/q/developer/",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-assistant",
+    "description": "AWS's generative AI coding assistant with inline code suggestions, chat, agentic coding, security scanning, and Java/.NET code transformation.",
+    "screenshot": "",
+    "models_count": 3,
+    "top_models": [
+      "Claude Sonnet 4",
+      "Claude Sonnet 3.7",
+      "Claude Sonnet 3.5"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "debugging",
+      "code-review",
+      "security-scanning",
+      "agentic-coding",
+      "code-transformation",
+      "infrastructure-as-code"
+    ],
+    "pricing": "freemium",
+    "login_type": "aws",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "50 agentic requests (chat + agentic coding) per month",
+      "autocomplete_suggestions": "unlimited inline suggestions as you type",
+      "chat_messages": "included in 50 agentic requests/month",
+      "rate_limits": "50 agentic requests/month per user (Builder ID). Account-level quotas for IAM users.",
+      "notes": "Free tier is perpetual (no time limit). Includes: unlimited code autocomplete (15+ languages), 50 agentic chat/coding requests/month, 1,000 LOC Java transformation/month, security scanning, reference tracking. AWS Builder ID (free) sufficient. No credit card required."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "aws",
+      "amazon-q",
+      "claude",
+      "ai-coding",
+      "ide-extension",
+      "vscode",
+      "jetbrains",
+      "security-scanning"
+    ],
+    "notes": "Formerly AWS CodeWhisperer (rebranded April 2024). One of the most generous free tiers: unlimited autocomplete, 50 agentic requests/month, security scanning included. 1.74M+ VS Code installs. Pro tier $19/user/month adds higher limits (1,000 agentic requests/month), IP indemnity, SSO. Also on JetBrains, Visual Studio, Eclipse, AWS Console.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "category": "vs_code_extension",
+    "sub_category": "ai-pair-programmer",
+    "description": "AI pair programming tool by GitHub/Microsoft providing inline code completions, chat, and agent-mode across multiple IDEs.",
+    "screenshot": "",
+    "models_count": 22,
+    "top_models": [
+      "Claude Haiku 4.5",
+      "GPT-5 mini",
+      "Claude Sonnet 4.6",
+      "Gemini 2.5 Pro",
+      "Claude Opus 4.6"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "agent-mode",
+      "terminal"
+    ],
+    "pricing": "freemium",
+    "login_type": "github",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "no daily limit specified",
+      "free_requests_per_month": "2000 code completions and 50 chat requests (including Copilot Edits and agent mode)",
+      "autocomplete_suggestions": "2000 per month",
+      "chat_messages": "50 per month (includes all chat, agent mode, Copilot Edits)",
+      "rate_limits": "50 chat requests/month across all chat features. Completions reset monthly. No overage available on Free.",
+      "notes": "Free tier launched Dec 2024. No credit card required. Agent mode available on Free (counts toward 50 chat/month). All 22 models accessible on Free from limited chat quota."
+    },
+    "status": "active",
+    "rating": 4.0,
+    "tags": [
+      "github",
+      "copilot",
+      "autocomplete",
+      "chat",
+      "agent-mode",
+      "multi-model"
+    ],
+    "notes": "Copilot Free: 2000 completions + 50 chat requests/month. All 22 models across all plans (Free/Pro/Pro+/Max) including Claude Opus, GPT-5 series, Gemini series. Pro $10/mo adds unlimited completions, cloud agent, code review. VS Code: 73.8M installs, 4.0/5 (1051 ratings). Moving to token-based billing (GitHub AI Credits) as of June 1, 2026.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Augment Code",
+    "url": "https://www.augmentcode.com",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-assistant",
+    "description": "AI-powered coding platform with proprietary context engine that indexes entire repos for agent, chat, and inline completions across VS Code, JetBrains, and CLI.",
+    "screenshot": "",
+    "models_count": 15,
+    "top_models": [
+      "Claude Opus 4.7",
+      "Claude Sonnet 4.6",
+      "Claude Haiku 4.5",
+      "GPT-5.5",
+      "GPT-5.4",
+      "Gemini 3.1 Pro",
+      "Kimi K2.6"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation"
+    ],
+    "pricing": "freemium",
+    "login_type": "google/microsoft/email",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited for completions and Next Edit",
+      "free_requests_per_month": "unlimited for completions and Next Edit",
+      "autocomplete_suggestions": "unlimited inline completions with full codebase context (free forever)",
+      "chat_messages": "credit-based: 30,000 credits on trial signup (with valid card). Chat/agent consume credits. No ongoing free credits after trial.",
+      "rate_limits": "30,000 credits one-time for trial; no recurring free credits. Completions and Next Edit remain free indefinitely.",
+      "notes": "All 15 models accessible on free tier via trial credits. After trial credits exhausted, chat/agent stop until upgrade. Completions and Next Edit free forever without limits."
+    },
+    "status": "active",
+    "rating": 4.5,
+    "tags": [
+      "ai-coding",
+      "vs-code",
+      "jetbrains",
+      "code-completion",
+      "agent",
+      "code-review",
+      "context-engine",
+      "cli",
+      "multi-model"
+    ],
+    "notes": "Key differentiator: proprietary Context Engine that semantically indexes entire codebase (not just grep). Paid: Indie $20/mo (40K credits), Standard $60/mo (130K credits), Max $200/mo (450K credits). BYOK for Enterprise. SOC 2 Type II, ISO 42001. Auggie CLI, Cosmos multi-agent, MCP support. No referral program.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Codeium",
+    "url": "https://marketplace.visualstudio.com/items?itemName=Codeium.codeium",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-assistant",
+    "description": "AI coding assistant (rebranded to Windsurf, then acquired by Cognition AI as Devin Desktop) with unlimited autocomplete and Cascade agent for 70+ languages.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "SWE-1.6 (slow speed on free)",
+      "SWE-1.5",
+      "SWE-1-mini",
+      "swe-grep",
+      "Cortex (Codeium proprietary)"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation",
+      "search"
+    ],
+    "pricing": "freemium",
+    "login_type": "github/google/email",
+    "referrals": "yes - 250 flex credits for both referrer and referee on Pro subscription.",
+    "free_tier_limits": {
+      "free_requests_per_day": "limited (light daily quota, exact number undisclosed)",
+      "free_requests_per_month": "limited (quota-based system since Mar 2026)",
+      "autocomplete_suggestions": "unlimited single and multi-line completions forever (Tab completions do not consume quota)",
+      "chat_messages": "limited (part of light daily/weekly agent quota)",
+      "rate_limits": "Daily and weekly quota refresh. Limited model availability on free (no premium Claude/GPT/Gemini). SWE-1.6 at slow speed.",
+      "notes": "Free tier generous for light use (under ~10 hrs/week). Tab/completions genuinely unlimited forever. Cascade agent and Chat consume from daily quota. No payment info required."
+    },
+    "status": "active (rebranded multiple times)",
+    "rating": 5,
+    "tags": [
+      "ai-coding",
+      "autocomplete",
+      "chat",
+      "codeium",
+      "windsurf",
+      "devin",
+      "free",
+      "vscode-extension",
+      "cascade"
+    ],
+    "notes": "TIMELINE: Codeium (2022) -> Windsurf (late 2024) -> Acquired by Cognition AI/Devin (Dec 2025) -> Devin Desktop (2026). VS Code extension still published as 'Codeium' but displays as 'Windsurf Plugin (formerly Codeium)'. 3.8M+ installs, 5 stars (1460 ratings). Pro $20/mo, Max $200/mo, Teams $40/user/mo. SWE-1.6 proprietary model family. Cascade is their multi-file agentic system.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Opencode",
+    "url": "https://opencode.ai",
+    "category": "vs_code_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open source AI coding agent that runs in terminal, desktop, or IDE. Supports 75+ LLM providers via BYOK with free models included.",
+    "screenshot": "",
+    "models_count": 5,
+    "top_models": [
+      "DeepSeek V4 Flash Free",
+      "Big Pickle",
+      "MiMo-V2.5 Free",
+      "North Mini Code Free",
+      "Nemotron 3 Ultra Free"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "multi-session",
+      "lsp-integration",
+      "mcp-support"
+    ],
+    "pricing": "free",
+    "login_type": "none",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited",
+      "free_requests_per_month": "unlimited",
+      "autocomplete_suggestions": "n/a",
+      "chat_messages": "unlimited",
+      "rate_limits": "None on tool itself; depends on chosen provider's API limits.",
+      "notes": "100% free and open source (MIT). Free Zen models available for limited time. Must BYOK for paid providers. Zen pay-as-you-go ($20+) and Go subscription ($10/mo) are optional."
+    },
+    "status": "active",
+    "rating": 4.5,
+    "tags": [
+      "ai-coding-agent",
+      "open-source",
+      "cli",
+      "terminal",
+      "developer-tools",
+      "code-generation",
+      "llm",
+      "vscode-extension"
+    ],
+    "notes": "100% open source (MIT). TypeScript. 173k+ GitHub stars, 7.5M monthly devs, 900+ contributors. Available as terminal TUI, desktop app (beta), and VS Code/IDE extension. Features Plan mode (read-only) and Build mode (full access), LSP integration, MCP support, multi-session agents. Latest v1.17.3 (Jun 10 2026). Built by Anomaly.",
+    "last_verified": "2026-06-10"
+  }
+]

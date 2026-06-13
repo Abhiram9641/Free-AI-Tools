@@ -1,0 +1,849 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "FreeLM" [ref=e5]:
+        - /url: /
+        - img [ref=e7]
+        - generic [ref=e10]: FreeLM
+      - generic [ref=e11]:
+        - link "Home" [ref=e12]:
+          - /url: /
+        - link "Explore" [ref=e13]:
+          - /url: /explore
+        - link "Categories" [ref=e14]:
+          - /url: /categories
+      - generic [ref=e15]:
+        - button "Search" [ref=e16]:
+          - img [ref=e17]
+          - generic [ref=e20]: Search…
+          - generic [ref=e21]: ⌘K
+        - button "Toggle theme" [ref=e22]:
+          - img [ref=e23]
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: 128 tools · Verified June 2026
+      - heading "Discover the Best Free AI Tools" [level=1] [ref=e30]:
+        - text: Discover the Best
+        - text: Free AI Tools
+      - paragraph [ref=e31]:
+        - text: A curated, verified directory of
+        - strong [ref=e32]: 128 free AI tools
+        - text: across 11 categories — chat, image, audio, music, video, coding, APIs, and more. No paywalls, no noise.
+      - button "Search by name, capability, or model… ⌘K" [ref=e34]:
+        - img [ref=e35]
+        - generic [ref=e38]: Search by name, capability, or model…
+        - generic [ref=e39]: ⌘K
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: "128"
+          - paragraph [ref=e43]: Free AI Tools
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: "11"
+          - paragraph [ref=e46]: Categories
+        - generic [ref=e47]:
+          - paragraph [ref=e48]: "122"
+          - paragraph [ref=e49]: Active Now
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Browse by Category" [level=2] [ref=e52]
+        - link "All categories" [ref=e53]:
+          - /url: /categories
+          - text: All categories
+          - img [ref=e54]
+      - generic [ref=e56]:
+        - link "💬 Chat Interfaces Conversational AI assistants and multi-model chat platforms 22 tools Explore" [ref=e57]:
+          - /url: /category/chatting_interfaces
+          - generic [ref=e58]: 💬
+          - heading "Chat Interfaces" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Conversational AI assistants and multi-model chat platforms
+          - generic [ref=e62]:
+            - generic [ref=e63]: 22 tools
+            - generic [ref=e64]:
+              - text: Explore
+              - img [ref=e65]
+        - link "🎨 Image Generation AI-powered image creation, editing, and design tools 16 tools Explore" [ref=e67]:
+          - /url: /category/image_generation
+          - generic [ref=e68]: 🎨
+          - heading "Image Generation" [level=3] [ref=e70]
+          - paragraph [ref=e71]: AI-powered image creation, editing, and design tools
+          - generic [ref=e72]:
+            - generic [ref=e73]: 16 tools
+            - generic [ref=e74]:
+              - text: Explore
+              - img [ref=e75]
+        - link "🎙️ Audio & Voice Text-to-speech, voice cloning, and audio AI tools 11 tools Explore" [ref=e77]:
+          - /url: /category/audio_generation
+          - generic [ref=e78]: 🎙️
+          - heading "Audio & Voice" [level=3] [ref=e80]
+          - paragraph [ref=e81]: Text-to-speech, voice cloning, and audio AI tools
+          - generic [ref=e82]:
+            - generic [ref=e83]: 11 tools
+            - generic [ref=e84]:
+              - text: Explore
+              - img [ref=e85]
+        - link "🎵 Music Generation AI music composition, song generation, and audio production 8 tools Explore" [ref=e87]:
+          - /url: /category/music_generation
+          - generic [ref=e88]: 🎵
+          - heading "Music Generation" [level=3] [ref=e90]
+          - paragraph [ref=e91]: AI music composition, song generation, and audio production
+          - generic [ref=e92]:
+            - generic [ref=e93]: 8 tools
+            - generic [ref=e94]:
+              - text: Explore
+              - img [ref=e95]
+        - link "🎬 Video Generation AI video creation, animation, and video editing tools 9 tools Explore" [ref=e97]:
+          - /url: /category/video_generation
+          - generic [ref=e98]: 🎬
+          - heading "Video Generation" [level=3] [ref=e100]
+          - paragraph [ref=e101]: AI video creation, animation, and video editing tools
+          - generic [ref=e102]:
+            - generic [ref=e103]: 9 tools
+            - generic [ref=e104]:
+              - text: Explore
+              - img [ref=e105]
+        - link "🔌 VS Code Extensions AI coding assistants and agents as VS Code extensions 8 tools Explore" [ref=e107]:
+          - /url: /category/vs_code_extensions
+          - generic [ref=e108]: 🔌
+          - heading "VS Code Extensions" [level=3] [ref=e110]
+          - paragraph [ref=e111]: AI coding assistants and agents as VS Code extensions
+          - generic [ref=e112]:
+            - generic [ref=e113]: 8 tools
+            - generic [ref=e114]:
+              - text: Explore
+              - img [ref=e115]
+        - link "⚡ CLI Coding Agents Terminal-based AI coding agents and developer tools 9 tools Explore" [ref=e117]:
+          - /url: /category/cli_coding_agents
+          - generic [ref=e118]: ⚡
+          - heading "CLI Coding Agents" [level=3] [ref=e120]
+          - paragraph [ref=e121]: Terminal-based AI coding agents and developer tools
+          - generic [ref=e122]:
+            - generic [ref=e123]: 9 tools
+            - generic [ref=e124]:
+              - text: Explore
+              - img [ref=e125]
+        - link "🔑 BYOK Extensions Bring Your Own Key coding agents — full control, zero platform cost 6 tools Explore" [ref=e127]:
+          - /url: /category/byok_extensions
+          - generic [ref=e128]: 🔑
+          - heading "BYOK Extensions" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Bring Your Own Key coding agents — full control, zero platform cost
+          - generic [ref=e132]:
+            - generic [ref=e133]: 6 tools
+            - generic [ref=e134]:
+              - text: Explore
+              - img [ref=e135]
+        - link "🖥️ Standalone IDEs AI-native full IDEs and app builders 10 tools Explore" [ref=e137]:
+          - /url: /category/standalone_ides
+          - generic [ref=e138]: 🖥️
+          - heading "Standalone IDEs" [level=3] [ref=e140]
+          - paragraph [ref=e141]: AI-native full IDEs and app builders
+          - generic [ref=e142]:
+            - generic [ref=e143]: 10 tools
+            - generic [ref=e144]:
+              - text: Explore
+              - img [ref=e145]
+        - link "🔗 API Providers LLM inference APIs, gateways, and model access providers 24 tools Explore" [ref=e147]:
+          - /url: /category/api_providers
+          - generic [ref=e148]: 🔗
+          - heading "API Providers" [level=3] [ref=e150]
+          - paragraph [ref=e151]: LLM inference APIs, gateways, and model access providers
+          - generic [ref=e152]:
+            - generic [ref=e153]: 24 tools
+            - generic [ref=e154]:
+              - text: Explore
+              - img [ref=e155]
+        - link "🤖 Free Claude Code & Codex Proxy services and API gateways to run Claude Code CLI and OpenAI Codex CLI for free or at very low cost 5 tools Explore" [ref=e157]:
+          - /url: /category/free_claude_codex
+          - generic [ref=e158]: 🤖
+          - heading "Free Claude Code & Codex" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Proxy services and API gateways to run Claude Code CLI and OpenAI Codex CLI for free or at very low cost
+          - generic [ref=e162]:
+            - generic [ref=e163]: 5 tools
+            - generic [ref=e164]:
+              - text: Explore
+              - img [ref=e165]
+    - separator [ref=e167]
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - heading "Top Rated Tools" [level=2] [ref=e171]
+          - paragraph [ref=e172]: Highest rated across all categories
+        - link "Explore all" [ref=e173]:
+          - /url: /explore
+          - text: Explore all
+          - img [ref=e174]
+      - generic [ref=e176]:
+        - link "Arena (formerly LMArena)" [ref=e177]:
+          - /url: /tool/chatting_interfaces-0-arena-formerly-lmarena-
+          - generic [ref=e178]:
+            - generic [ref=e179]: 💬
+            - generic [ref=e180]:
+              - heading "Arena (formerly LMArena)" [level=3] [ref=e181]
+              - generic [ref=e183]: Free
+            - generic [ref=e184]:
+              - img [ref=e185]
+              - generic [ref=e187]: "5.0"
+          - paragraph [ref=e188]: Community-driven platform for evaluating LLMs through anonymous side-by-side battles and multi-modal arena modes.
+          - generic [ref=e189]:
+            - generic [ref=e190]: text generation
+            - generic [ref=e191]: code generation
+            - generic [ref=e192]: image generation
+            - generic [ref=e193]: "+2"
+          - generic [ref=e194]:
+            - generic [ref=e195]: 659+ models
+            - generic [ref=e196]:
+              - text: Open
+              - img [ref=e197]
+        - link "SharedChat" [ref=e199]:
+          - /url: /tool/chatting_interfaces-6-sharedchat
+          - generic [ref=e200]:
+            - generic [ref=e201]: 💬
+            - generic [ref=e202]:
+              - heading "SharedChat" [level=3] [ref=e203]
+              - generic [ref=e205]: Freemium
+            - generic [ref=e206]:
+              - img [ref=e207]
+              - generic [ref=e209]: "5.0"
+          - paragraph [ref=e210]: AI-powered collaborative chat platform with multiple AI models in the same conversation, smart routing, and real-time collaboration.
+          - generic [ref=e211]:
+            - generic [ref=e212]: text generation
+            - generic [ref=e213]: image generation
+            - generic [ref=e214]: code generation
+            - generic [ref=e215]: "+1"
+          - generic [ref=e216]:
+            - generic [ref=e217]: 7+ models
+            - generic [ref=e218]:
+              - text: Open
+              - img [ref=e219]
+        - link "ChatGPT" [ref=e221]:
+          - /url: /tool/chatting_interfaces-8-chatgpt
+          - generic [ref=e222]:
+            - generic [ref=e223]: 💬
+            - generic [ref=e224]:
+              - heading "ChatGPT" [level=3] [ref=e225]
+              - generic [ref=e227]: Freemium
+            - generic [ref=e228]:
+              - img [ref=e229]
+              - generic [ref=e231]: "5.0"
+          - paragraph [ref=e232]: AI-powered chatbot by OpenAI that generates text, images, audio, and code using GPT-5 family models with deep research and agent capabilities.
+          - generic [ref=e233]:
+            - generic [ref=e234]: text generation
+            - generic [ref=e235]: image generation
+            - generic [ref=e236]: audio generation
+            - generic [ref=e237]: "+2"
+          - generic [ref=e238]:
+            - generic [ref=e239]: 7+ models
+            - generic [ref=e240]:
+              - text: Open
+              - img [ref=e241]
+        - link "Perplexity" [ref=e243]:
+          - /url: /tool/chatting_interfaces-12-perplexity
+          - generic [ref=e244]:
+            - generic [ref=e245]: 💬
+            - generic [ref=e246]:
+              - heading "Perplexity" [level=3] [ref=e247]
+              - generic [ref=e249]: Freemium
+            - generic [ref=e250]:
+              - img [ref=e251]
+              - generic [ref=e253]: "5.0"
+          - paragraph [ref=e254]: AI answer engine that researches the open web in real-time and returns concise, cited answers using multiple frontier models.
+          - generic [ref=e255]:
+            - generic [ref=e256]: text generation
+            - generic [ref=e257]: code generation
+            - generic [ref=e258]: image generation
+            - generic [ref=e259]: "+1"
+          - generic [ref=e260]:
+            - generic [ref=e261]: 7+ models
+            - generic [ref=e262]:
+              - text: Open
+              - img [ref=e263]
+        - link "Claude" [ref=e265]:
+          - /url: /tool/chatting_interfaces-18-claude
+          - generic [ref=e266]:
+            - generic [ref=e267]: 💬
+            - generic [ref=e268]:
+              - heading "Claude" [level=3] [ref=e269]
+              - generic [ref=e271]: Freemium
+            - generic [ref=e272]:
+              - img [ref=e273]
+              - generic [ref=e275]: "5.0"
+          - paragraph [ref=e276]: AI assistant by Anthropic using Constitutional AI for safe, helpful, and honest conversations with strong reasoning, coding, and analysis.
+          - generic [ref=e277]:
+            - generic [ref=e278]: text generation
+            - generic [ref=e279]: code generation
+            - generic [ref=e280]: web search
+          - generic [ref=e281]:
+            - generic [ref=e282]: 5+ models
+            - generic [ref=e283]:
+              - text: Open
+              - img [ref=e284]
+        - link "Arena (LMArena)" [ref=e286]:
+          - /url: /tool/image_generation-0-arena-lmarena-
+          - generic [ref=e287]:
+            - generic [ref=e288]: 🎨
+            - generic [ref=e289]:
+              - heading "Arena (LMArena)" [level=3] [ref=e290]
+              - generic [ref=e292]: Free
+            - generic [ref=e293]:
+              - img [ref=e294]
+              - generic [ref=e296]: "5.0"
+          - paragraph [ref=e297]: Community-powered platform for comparing image generators via anonymous head-to-head battles. 70 image models available.
+          - generic [ref=e298]:
+            - generic [ref=e299]: text to image
+            - generic [ref=e300]: image editing
+            - generic [ref=e301]: style control
+            - generic [ref=e302]: "+2"
+          - generic [ref=e303]:
+            - generic [ref=e304]: 70+ models
+            - generic [ref=e305]:
+              - text: Open
+              - img [ref=e306]
+        - link "ElevenLabs" [ref=e308]:
+          - /url: /tool/audio_generation-0-elevenlabs
+          - generic [ref=e309]:
+            - generic [ref=e310]: 🎙️
+            - generic [ref=e311]:
+              - heading "ElevenLabs" [level=3] [ref=e312]
+              - generic [ref=e314]: Freemium
+            - generic [ref=e315]:
+              - img [ref=e316]
+              - generic [ref=e318]: "5.0"
+          - paragraph [ref=e319]: AI voice platform offering ultra-realistic text-to-speech, voice cloning, speech-to-text, music generation, and dubbing across 70+ languages with 11,000+ voices.
+          - generic [ref=e320]:
+            - generic [ref=e321]: text to speech
+            - generic [ref=e322]: speech to text
+            - generic [ref=e323]: voice cloning
+            - generic [ref=e324]: "+5"
+          - generic [ref=e325]:
+            - generic [ref=e326]: 11+ models
+            - generic [ref=e327]:
+              - text: Open
+              - img [ref=e328]
+        - link "Suno" [ref=e330]:
+          - /url: /tool/music_generation-0-suno
+          - generic [ref=e331]:
+            - generic [ref=e332]: 🎵
+            - generic [ref=e333]:
+              - heading "Suno" [level=3] [ref=e334]
+              - generic [ref=e336]: Freemium
+            - generic [ref=e337]:
+              - img [ref=e338]
+              - generic [ref=e340]: "5.0"
+          - paragraph [ref=e341]: Leading AI music generator that creates complete songs with vocals, lyrics, and full production from a single text prompt in under a minute.
+          - generic [ref=e342]:
+            - generic [ref=e343]: music generation
+            - generic [ref=e344]: lyrics generation
+            - generic [ref=e345]: vocal gen
+            - generic [ref=e346]: "+4"
+          - generic [ref=e347]:
+            - generic [ref=e348]: 5+ models
+            - generic [ref=e349]:
+              - text: Open
+              - img [ref=e350]
+        - link "Aider" [ref=e352]:
+          - /url: /tool/byok_extensions-4-aider
+          - generic [ref=e353]:
+            - generic [ref=e354]: 🔑
+            - generic [ref=e355]:
+              - heading "Aider" [level=3] [ref=e356]
+              - generic [ref=e358]: Free
+            - generic [ref=e359]:
+              - img [ref=e360]
+              - generic [ref=e362]: "5.0"
+          - paragraph [ref=e363]: Open source AI pair programming CLI tool that connects to LLMs to edit code directly in git repos with automatic commits. Created by Paul Gauthier.
+          - generic [ref=e364]:
+            - generic [ref=e365]: code generation
+            - generic [ref=e366]: chat
+            - generic [ref=e367]: agent
+            - generic [ref=e368]: "+6"
+          - generic [ref=e369]:
+            - generic [ref=e370]: 50+ models
+            - generic [ref=e371]:
+              - text: Open
+              - img [ref=e372]
+        - link "Cursor" [ref=e374]:
+          - /url: /tool/standalone_ides-1-cursor
+          - generic [ref=e375]:
+            - generic [ref=e376]: 🖥️
+            - generic [ref=e377]:
+              - heading "Cursor" [level=3] [ref=e378]
+              - generic [ref=e380]: Freemium
+            - generic [ref=e381]:
+              - img [ref=e382]
+              - generic [ref=e384]: "5.0"
+          - paragraph [ref=e385]: AI-native standalone IDE (VS Code fork) by Anysphere with agentic coding, multi-model support, Composer 2.5, and deep codebase understanding.
+          - generic [ref=e386]:
+            - generic [ref=e387]: code generation
+            - generic [ref=e388]: autocomplete
+            - generic [ref=e389]: chat
+            - generic [ref=e390]: "+6"
+          - generic [ref=e391]:
+            - generic [ref=e392]: 40+ models
+            - generic [ref=e393]:
+              - text: Open
+              - img [ref=e394]
+        - link "Grok" [ref=e396]:
+          - /url: /tool/chatting_interfaces-14-grok
+          - generic [ref=e397]:
+            - generic [ref=e398]: 💬
+            - generic [ref=e399]:
+              - heading "Grok" [level=3] [ref=e400]
+              - generic [ref=e402]: Freemium
+            - generic [ref=e403]:
+              - img [ref=e404]
+              - generic [ref=e406]: "4.9"
+          - paragraph [ref=e407]: xAI's conversational AI with real-time X/Twitter data access, irreverent tone, and multimodal generation capabilities.
+          - generic [ref=e408]:
+            - generic [ref=e409]: text generation
+            - generic [ref=e410]: image generation
+            - generic [ref=e411]: video generation
+            - generic [ref=e412]: "+2"
+          - generic [ref=e413]:
+            - generic [ref=e414]: 6+ models
+            - generic [ref=e415]:
+              - text: Open
+              - img [ref=e416]
+        - link "FineVoice" [ref=e418]:
+          - /url: /tool/audio_generation-4-finevoice
+          - generic [ref=e419]:
+            - generic [ref=e420]: 🎙️
+            - generic [ref=e421]:
+              - heading "FineVoice" [level=3] [ref=e422]
+              - generic [ref=e424]: Freemium
+            - generic [ref=e425]:
+              - img [ref=e426]
+              - generic [ref=e428]: "4.9"
+          - paragraph [ref=e429]: Free all-in-one AI voice generator with 1,500+ voices across 154 languages, offering TTS, voice cloning, voice changing, sound effects, and more — no sign-up required.
+          - generic [ref=e430]:
+            - generic [ref=e431]: text to speech
+            - generic [ref=e432]: voice cloning
+            - generic [ref=e433]: voice changing
+            - generic [ref=e434]: "+5"
+          - generic [ref=e435]:
+            - generic [ref=e436]: 12+ models
+            - generic [ref=e437]:
+              - text: Open
+              - img [ref=e438]
+    - generic [ref=e440]:
+      - separator [ref=e441]
+      - generic [ref=e442]:
+        - generic [ref=e443]:
+          - generic [ref=e444]: 💬
+          - heading "Chat Interfaces" [level=2] [ref=e446]
+        - link "View all (22)" [ref=e447]:
+          - /url: /category/chatting_interfaces
+          - text: View all (22)
+          - img [ref=e448]
+      - generic [ref=e450]:
+        - link "Arena (formerly LMArena)" [ref=e451]:
+          - /url: /tool/chatting_interfaces-0-arena-formerly-lmarena-
+          - generic [ref=e452]:
+            - generic [ref=e453]: 💬
+            - generic [ref=e454]:
+              - heading "Arena (formerly LMArena)" [level=3] [ref=e455]
+              - generic [ref=e457]: Free
+            - generic [ref=e458]:
+              - img [ref=e459]
+              - generic [ref=e461]: "5.0"
+          - paragraph [ref=e462]: Community-driven platform for evaluating LLMs through anonymous side-by-side battles and multi-modal arena modes.
+          - generic [ref=e463]:
+            - generic [ref=e464]: text generation
+            - generic [ref=e465]: code generation
+            - generic [ref=e466]: image generation
+            - generic [ref=e467]: "+2"
+          - generic [ref=e468]:
+            - generic [ref=e469]: 659+ models
+            - generic [ref=e470]:
+              - text: Open
+              - img [ref=e471]
+        - link "g4f.dev" [ref=e473]:
+          - /url: /tool/chatting_interfaces-1-g4f-dev
+          - generic [ref=e474]:
+            - generic [ref=e475]: 💬
+            - generic [ref=e476]:
+              - heading "g4f.dev" [level=3] [ref=e477]
+              - generic [ref=e478]:
+                - generic [ref=e479]: Free
+                - generic [ref=e480]: No login
+            - generic [ref=e481]:
+              - img [ref=e482]
+              - generic [ref=e484]: "4.0"
+          - paragraph [ref=e485]: Open-source project providing free access to 100+ AI models via unified API and web chat interface. No signup required.
+          - generic [ref=e486]:
+            - generic [ref=e487]: text generation
+            - generic [ref=e488]: image generation
+            - generic [ref=e489]: video generation
+            - generic [ref=e490]: "+3"
+          - generic [ref=e491]:
+            - generic [ref=e492]: 100+ models
+            - generic [ref=e493]:
+              - text: Open
+              - img [ref=e494]
+        - link "Genspark" [ref=e496]:
+          - /url: /tool/chatting_interfaces-2-genspark
+          - generic [ref=e497]:
+            - generic [ref=e498]: 💬
+            - generic [ref=e499]:
+              - heading "Genspark" [level=3] [ref=e500]
+              - generic [ref=e502]: Freemium
+            - generic [ref=e503]:
+              - img [ref=e504]
+              - generic [ref=e506]: "4.7"
+          - paragraph [ref=e507]: All-in-one AI workspace with 15+ models, Mixture-of-Agents tech, AI slides/docs/images/video generation.
+          - generic [ref=e508]:
+            - generic [ref=e509]: text generation
+            - generic [ref=e510]: image generation
+            - generic [ref=e511]: video generation
+            - generic [ref=e512]: "+4"
+          - generic [ref=e513]:
+            - generic [ref=e514]: 15+ models
+            - generic [ref=e515]:
+              - text: Open
+              - img [ref=e516]
+        - link "Hugging Face Chat" [ref=e518]:
+          - /url: /tool/chatting_interfaces-3-hugging-face-chat
+          - generic [ref=e519]:
+            - generic [ref=e520]: 💬
+            - generic [ref=e521]:
+              - heading "Hugging Face Chat" [level=3] [ref=e522]
+              - generic [ref=e524]: Freemium
+            - generic [ref=e525]:
+              - img [ref=e526]
+              - generic [ref=e528]: "4.0"
+          - paragraph [ref=e529]: Open-source chat app with 119+ open source models, auto-routing via Omni, web search, code execution, MCP servers.
+          - generic [ref=e530]:
+            - generic [ref=e531]: text generation
+            - generic [ref=e532]: code generation
+            - generic [ref=e533]: image generation
+            - generic [ref=e534]: "+2"
+          - generic [ref=e535]:
+            - generic [ref=e536]: 119+ models
+            - generic [ref=e537]:
+              - text: Open
+              - img [ref=e538]
+    - generic [ref=e540]:
+      - separator [ref=e541]
+      - generic [ref=e542]:
+        - generic [ref=e543]:
+          - generic [ref=e544]: 🖥️
+          - heading "Standalone IDEs" [level=2] [ref=e546]
+        - link "View all (10)" [ref=e547]:
+          - /url: /category/standalone_ides
+          - text: View all (10)
+          - img [ref=e548]
+      - generic [ref=e550]:
+        - link "Antigravity" [ref=e551]:
+          - /url: /tool/standalone_ides-0-antigravity
+          - generic [ref=e552]:
+            - generic [ref=e553]: 🖥️
+            - generic [ref=e554]:
+              - heading "Antigravity" [level=3] [ref=e555]
+              - generic [ref=e557]: Freemium
+            - generic [ref=e558]:
+              - img [ref=e559]
+              - generic [ref=e561]: "4.0"
+          - paragraph [ref=e562]: Google's agent-first development platform with a VS Code fork IDE (Desktop App) and CLI (agy) — powered by Gemini 3.5 Flash with multi-agent orchestration. Successor to Gemini CLI.
+          - generic [ref=e563]:
+            - generic [ref=e564]: code generation
+            - generic [ref=e565]: autocomplete
+            - generic [ref=e566]: chat
+            - generic [ref=e567]: "+6"
+          - generic [ref=e568]:
+            - generic [ref=e569]: 5+ models
+            - generic [ref=e570]:
+              - text: Open
+              - img [ref=e571]
+        - link "Cursor" [ref=e573]:
+          - /url: /tool/standalone_ides-1-cursor
+          - generic [ref=e574]:
+            - generic [ref=e575]: 🖥️
+            - generic [ref=e576]:
+              - heading "Cursor" [level=3] [ref=e577]
+              - generic [ref=e579]: Freemium
+            - generic [ref=e580]:
+              - img [ref=e581]
+              - generic [ref=e583]: "5.0"
+          - paragraph [ref=e584]: AI-native standalone IDE (VS Code fork) by Anysphere with agentic coding, multi-model support, Composer 2.5, and deep codebase understanding.
+          - generic [ref=e585]:
+            - generic [ref=e586]: code generation
+            - generic [ref=e587]: autocomplete
+            - generic [ref=e588]: chat
+            - generic [ref=e589]: "+6"
+          - generic [ref=e590]:
+            - generic [ref=e591]: 40+ models
+            - generic [ref=e592]:
+              - text: Open
+              - img [ref=e593]
+        - link "Windsurf" [ref=e595]:
+          - /url: /tool/standalone_ides-2-windsurf
+          - generic [ref=e596]:
+            - generic [ref=e597]: 🖥️
+            - generic [ref=e598]:
+              - heading "Windsurf" [level=3] [ref=e599]
+              - generic [ref=e601]: Freemium
+            - generic [ref=e602]:
+              - img [ref=e603]
+              - generic [ref=e605]: "4.0"
+          - paragraph [ref=e606]: AI-native standalone IDE (VS Code fork) originally by Codeium, now owned by Cognition AI and rebranded as Devin Desktop. Features Cascade/Devin Local agent for multi-file editing.
+          - generic [ref=e607]:
+            - generic [ref=e608]: code generation
+            - generic [ref=e609]: autocomplete
+            - generic [ref=e610]: chat
+            - generic [ref=e611]: "+7"
+          - generic [ref=e612]:
+            - generic [ref=e613]: 8+ models
+            - generic [ref=e614]:
+              - text: Open
+              - img [ref=e615]
+        - link "Trae" [ref=e617]:
+          - /url: /tool/standalone_ides-3-trae
+          - generic [ref=e618]:
+            - generic [ref=e619]: 🖥️
+            - generic [ref=e620]:
+              - heading "Trae" [level=3] [ref=e621]
+              - generic [ref=e623]: Freemium
+            - generic [ref=e624]:
+              - img [ref=e625]
+              - generic [ref=e627]: "3.5"
+          - paragraph [ref=e628]: AI-powered standalone IDE (VS Code fork) and coding assistant by ByteDance with code completion, agentic SOLO mode, and multi-model selection.
+          - generic [ref=e629]:
+            - generic [ref=e630]: code generation
+            - generic [ref=e631]: autocomplete
+            - generic [ref=e632]: chat
+            - generic [ref=e633]: "+6"
+          - generic [ref=e634]:
+            - generic [ref=e635]: 7+ models
+            - generic [ref=e636]:
+              - text: Open
+              - img [ref=e637]
+    - generic [ref=e639]:
+      - separator [ref=e640]
+      - generic [ref=e641]:
+        - generic [ref=e642]:
+          - generic [ref=e643]: 🔗
+          - heading "API Providers" [level=2] [ref=e645]
+        - link "View all (24)" [ref=e646]:
+          - /url: /category/api_providers
+          - text: View all (24)
+          - img [ref=e647]
+      - generic [ref=e649]:
+        - link "Gemini API" [ref=e650]:
+          - /url: /tool/api_providers-0-gemini-api
+          - generic [ref=e651]:
+            - generic [ref=e652]: 🔗
+            - generic [ref=e653]:
+              - heading "Gemini API" [level=3] [ref=e654]
+              - generic [ref=e656]: Freemium
+            - generic [ref=e657]:
+              - img [ref=e658]
+              - generic [ref=e660]: "4.0"
+          - paragraph [ref=e661]: Google's generative AI API providing access to the full Gemini model family (Pro, Flash, Flash-Lite) — one of the most generous free tiers in the industry with no credit card and no expiration.
+          - generic [ref=e662]:
+            - generic [ref=e663]: text generation
+            - generic [ref=e664]: code generation
+            - generic [ref=e665]: image generation
+            - generic [ref=e666]: "+4"
+          - generic [ref=e667]:
+            - generic [ref=e668]: 18+ models
+            - generic [ref=e669]:
+              - text: Open
+              - img [ref=e670]
+        - link "OpenRouter" [ref=e672]:
+          - /url: /tool/api_providers-1-openrouter
+          - generic [ref=e673]:
+            - generic [ref=e674]: 🔗
+            - generic [ref=e675]:
+              - heading "OpenRouter" [level=3] [ref=e676]
+              - generic [ref=e678]: Freemium
+            - generic [ref=e679]:
+              - img [ref=e680]
+              - generic [ref=e682]: "4.5"
+          - paragraph [ref=e683]: Unified API gateway providing access to 400+ AI models from 60+ providers through a single OpenAI-compatible endpoint with automatic fallback routing and unified billing.
+          - generic [ref=e684]:
+            - generic [ref=e685]: text generation
+            - generic [ref=e686]: code generation
+            - generic [ref=e687]: image generation
+            - generic [ref=e688]: "+6"
+          - generic [ref=e689]:
+            - generic [ref=e690]: 400+ models
+            - generic [ref=e691]:
+              - text: Open
+              - img [ref=e692]
+        - link "Groq" [ref=e694]:
+          - /url: /tool/api_providers-2-groq
+          - generic [ref=e695]:
+            - generic [ref=e696]: 🔗
+            - generic [ref=e697]:
+              - heading "Groq" [level=3] [ref=e698]
+              - generic [ref=e700]: Freemium
+            - generic [ref=e701]:
+              - img [ref=e702]
+              - generic [ref=e704]: "4.0"
+          - paragraph [ref=e705]: Ultra-fast LLM inference API built on custom LPU silicon — delivers 394-1000+ tokens/sec on open-source models at 5-14x lower cost than GPU providers.
+          - generic [ref=e706]:
+            - generic [ref=e707]: text generation
+            - generic [ref=e708]: code generation
+            - generic [ref=e709]: function calling
+            - generic [ref=e710]: "+6"
+          - generic [ref=e711]:
+            - generic [ref=e712]: 16+ models
+            - generic [ref=e713]:
+              - text: Open
+              - img [ref=e714]
+        - link "Cerebras" [ref=e716]:
+          - /url: /tool/api_providers-3-cerebras
+          - generic [ref=e717]:
+            - generic [ref=e718]: 🔗
+            - generic [ref=e719]:
+              - heading "Cerebras" [level=3] [ref=e720]
+              - generic [ref=e722]: Freemium
+            - generic [ref=e723]:
+              - img [ref=e724]
+              - generic [ref=e726]: "4.0"
+          - paragraph [ref=e727]: AI inference API running on WSE-3 Wafer-Scale Engine chips — up to 15x faster than GPUs with OpenAI-compatible API.
+          - generic [ref=e728]:
+            - generic [ref=e729]: text generation
+            - generic [ref=e730]: code generation
+            - generic [ref=e731]: function calling
+            - generic [ref=e732]: "+3"
+          - generic [ref=e733]:
+            - generic [ref=e734]: 2+ models
+            - generic [ref=e735]:
+              - text: Open
+              - img [ref=e736]
+    - generic [ref=e738]:
+      - separator [ref=e739]
+      - generic [ref=e740]:
+        - generic [ref=e741]:
+          - generic [ref=e742]: ⚡
+          - heading "CLI Coding Agents" [level=2] [ref=e744]
+        - link "View all (9)" [ref=e745]:
+          - /url: /category/cli_coding_agents
+          - text: View all (9)
+          - img [ref=e746]
+      - generic [ref=e748]:
+        - link "Freebuff" [ref=e749]:
+          - /url: /tool/cli_coding_agents-0-freebuff
+          - generic [ref=e750]:
+            - generic [ref=e751]: ⚡
+            - generic [ref=e752]:
+              - heading "Freebuff" [level=3] [ref=e753]
+              - generic [ref=e754]:
+                - generic [ref=e755]: Free
+                - generic [ref=e756]: No login
+            - generic [ref=e757]:
+              - img [ref=e758]
+              - generic [ref=e760]: "4.0"
+          - paragraph [ref=e761]: Free, ad-supported AI coding agent for the terminal. Built on the Codebuff multi-agent platform. No subscription, credits, or config needed.
+          - generic [ref=e762]:
+            - generic [ref=e763]: code generation
+            - generic [ref=e764]: agent
+            - generic [ref=e765]: terminal
+            - generic [ref=e766]: "+4"
+          - generic [ref=e767]:
+            - generic [ref=e768]: 5+ models
+            - generic [ref=e769]:
+              - text: Open
+              - img [ref=e770]
+        - link "Antigravity" [ref=e772]:
+          - /url: /tool/cli_coding_agents-2-antigravity
+          - generic [ref=e773]:
+            - generic [ref=e774]: ⚡
+            - generic [ref=e775]:
+              - heading "Antigravity" [level=3] [ref=e776]
+              - generic [ref=e778]: Freemium
+            - generic [ref=e779]:
+              - img [ref=e780]
+              - generic [ref=e782]: "4.0"
+          - paragraph [ref=e783]: Google's agent-first development platform with CLI (agy), VS Code fork IDE, and SDK — powered by Gemini 3.5 Flash with autonomous multi-agent orchestration. Successor to Gemini CLI.
+          - generic [ref=e784]:
+            - generic [ref=e785]: code generation
+            - generic [ref=e786]: agent
+            - generic [ref=e787]: terminal
+            - generic [ref=e788]: "+4"
+          - generic [ref=e789]:
+            - generic [ref=e790]: 5+ models
+            - generic [ref=e791]:
+              - text: Open
+              - img [ref=e792]
+        - link "Kiro" [ref=e794]:
+          - /url: /tool/cli_coding_agents-3-kiro
+          - generic [ref=e795]:
+            - generic [ref=e796]: ⚡
+            - generic [ref=e797]:
+              - heading "Kiro" [level=3] [ref=e798]
+              - generic [ref=e800]: Freemium
+            - generic [ref=e801]:
+              - img [ref=e802]
+              - generic [ref=e804]: "4.0"
+          - paragraph [ref=e805]: AWS/Amazon's agentic AI IDE and CLI for spec-driven development, code generation, and autonomous agentic coding. Evolved from Amazon Q Developer CLI.
+          - generic [ref=e806]:
+            - generic [ref=e807]: code generation
+            - generic [ref=e808]: agent
+            - generic [ref=e809]: terminal
+            - generic [ref=e810]: "+5"
+          - generic [ref=e811]:
+            - generic [ref=e812]: 6+ models
+            - generic [ref=e813]:
+              - text: Open
+              - img [ref=e814]
+        - link "Kilo CLI" [ref=e816]:
+          - /url: /tool/cli_coding_agents-4-kilo-cli
+          - generic [ref=e817]:
+            - generic [ref=e818]: ⚡
+            - generic [ref=e819]:
+              - heading "Kilo CLI" [level=3] [ref=e820]
+              - generic [ref=e822]: Freemium
+            - generic [ref=e823]:
+              - img [ref=e824]
+              - generic [ref=e826]: "4.7"
+          - paragraph [ref=e827]: Open-source AI coding agent for the terminal. CLI component of the Kilo Code platform with 500+ models, agentic coding, and file editing.
+          - generic [ref=e828]:
+            - generic [ref=e829]: code generation
+            - generic [ref=e830]: agent
+            - generic [ref=e831]: terminal
+            - generic [ref=e832]: "+3"
+          - generic [ref=e833]:
+            - generic [ref=e834]: 500+ models
+            - generic [ref=e835]:
+              - text: Open
+              - img [ref=e836]
+    - generic [ref=e840]:
+      - paragraph [ref=e841]: Ready to explore?
+      - heading "128 Free AI Tools." [level=2] [ref=e842]
+      - paragraph [ref=e843]: Browse every tool, filter by capability, and find exactly what you need in seconds.
+      - link "Explore All Tools" [ref=e844]:
+        - /url: /explore
+        - text: Explore All Tools
+        - img [ref=e845]
+  - contentinfo [ref=e847]:
+    - generic [ref=e848]:
+      - generic [ref=e849]:
+        - generic [ref=e850]:
+          - generic [ref=e851]:
+            - img [ref=e853]
+            - generic [ref=e855]: FreeLM
+          - paragraph [ref=e856]: Comprehensive directory of free AI tools, updated regularly.
+        - generic [ref=e857]:
+          - generic [ref=e858]:
+            - paragraph [ref=e859]: Explore
+            - list [ref=e860]:
+              - listitem [ref=e861]:
+                - link "All Tools" [ref=e862]:
+                  - /url: /explore
+              - listitem [ref=e863]:
+                - link "Categories" [ref=e864]:
+                  - /url: /categories
+          - generic [ref=e865]:
+            - paragraph [ref=e866]: Popular
+            - list [ref=e867]:
+              - listitem [ref=e868]:
+                - link "Chat" [ref=e869]:
+                  - /url: /category/chatting_interfaces
+              - listitem [ref=e870]:
+                - link "APIs" [ref=e871]:
+                  - /url: /category/api_providers
+              - listitem [ref=e872]:
+                - link "IDEs" [ref=e873]:
+                  - /url: /category/standalone_ides
+      - separator [ref=e874]
+      - paragraph [ref=e875]: © 2026 FreeLM. Data verified June 2026. Not affiliated with any listed companies.

@@ -1,0 +1,280 @@
+[
+  {
+    "name": "Cline",
+    "url": "https://cline.bot",
+    "category": "byok_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open-source autonomous coding agent for VS Code and multi-IDE that creates/edits files, runs terminal commands, uses browser with computer use, and supports MCP. 100% BYOK.",
+    "screenshot": "",
+    "models_count": 500,
+    "top_models": [
+      "Claude (Anthropic)",
+      "GPT (OpenAI)",
+      "Gemini (Google)",
+      "any model via OpenRouter (200+)",
+      "local via Ollama/LM Studio"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "mcp-support",
+      "computer-use",
+      "plan-act"
+    ],
+    "pricing": "free",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK)",
+      "free_requests_per_month": "unlimited (BYOK)",
+      "rate_limits": "Depends on user's API key limits. No built-in limits in the extension.",
+      "notes": "100% BYOK. Free and open source (Apache 2.0). No paid tiers — you pay only for API usage via your own keys. Can also use local models for $0."
+    },
+    "status": "active",
+    "rating": 4.2,
+    "tags": [
+      "byok",
+      "open-source",
+      "vs-code",
+      "agent",
+      "mcp",
+      "multi-ide"
+    ],
+    "notes": "Originally 'Claude Dev', renamed to Cline. 4.27M VS Code installs. 63k GitHub stars. Apache 2.0. Now multi-IDE: VS Code, JetBrains, Cursor, Windsurf, Zed, Neovim. Also has CLI (`npm i -g cline`), SDK, Kanban multi-agent board. Features: Plan/Act toggle, MCP Marketplace, Computer Use, checkpoints, headless CI/CD, multi-agent teams, Slack/Telegram integrations.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Roo Code",
+    "url": "https://marketplace.visualstudio.com/items?itemName=RooVeterinaryInc.roo-cline",
+    "category": "byok_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open-source VS Code extension (forked from Cline) with specialized agent modes (Code, Architect, Ask, Debug), multi-model BYOK, and MCP integration. Shut down May 2026.",
+    "screenshot": "",
+    "models_count": 0,
+    "top_models": [
+      "Claude Sonnet 4",
+      "GPT-4o",
+      "Gemini 2.5 Flash",
+      "DeepSeek Coder V2",
+      "Llama 3.1 70B"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "mcp-support"
+    ],
+    "pricing": "free",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK)",
+      "free_requests_per_month": "unlimited (BYOK)",
+      "rate_limits": "Depends on user's API key. No built-in limits.",
+      "notes": "100% BYOK. Free and open source (Apache 2.0). Forked from Cline. Now shut down."
+    },
+    "status": "inactive",
+    "rating": 4.5,
+    "tags": [
+      "byok",
+      "open-source",
+      "vs-code",
+      "agent",
+      "mcp",
+      "fork"
+    ],
+    "notes": "1.72M VS Code installs. 24.2k GitHub stars. Forked from Cline (late 2024), later forked by Kilo Code. Shut down May 15, 2026 as team went all-in on Roomote (operational engineering agent). Standout feature: Custom Modes (Code, Architect, Ask, Debug).",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Void",
+    "url": "https://voideditor.com",
+    "category": "byok_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open-source AI IDE (VS Code fork) with agent mode, autocomplete, and inline editing. BYOK-only, privacy-first Cursor alternative. Deprecated June 2026.",
+    "screenshot": "",
+    "models_count": 0,
+    "top_models": [],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "autocomplete"
+    ],
+    "pricing": "free",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK)",
+      "free_requests_per_month": "unlimited (BYOK)",
+      "rate_limits": "Your API key's limits apply. No limits from Void itself. No account required.",
+      "notes": "100% BYOK. No free LLM credits from Void. Must bring your own API key or use local models via Ollama."
+    },
+    "status": "inactive",
+    "rating": 4.0,
+    "tags": [
+      "byok",
+      "vs-code-fork",
+      "agent",
+      "ai-coding",
+      "open-source",
+      "deprecated"
+    ],
+    "notes": "Note: Void was an AI IDE (VS Code fork), NOT a VS Code extension. GitHub archived/read-only June 2, 2026. 28.8k stars at deprecation. Created by Glass Devtools Inc (YC S2024). Successor projects listed in void-forks repo.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "CodeGPT",
+    "url": "https://codegpt.co",
+    "category": "byok_extension",
+    "sub_category": "ai-coding-assistant",
+    "description": "AI coding assistant connecting to 20+ AI providers via BYOK, with agent mode, chat, autocomplete (paid add-on), and local model support.",
+    "screenshot": "",
+    "models_count": 50,
+    "top_models": [
+      "Claude Opus 4.6",
+      "Claude Sonnet 4.6",
+      "GPT-5",
+      "GPT-4o",
+      "Gemini 2.5 Pro",
+      "Gemini 2.5 Flash"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "autocomplete",
+      "agent",
+      "debugging",
+      "code-review",
+      "refactoring",
+      "test-generation"
+    ],
+    "pricing": "freemium",
+    "login_type": "email/google/github",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "N/A (30 total one-time trial, not daily)",
+      "free_requests_per_month": "30 total trial, unlimited with BYOK",
+      "autocomplete_suggestions": "Not included in free tier ($8/mo add-on)",
+      "chat_messages": "30 without API key (one-time), unlimited with BYOK",
+      "rate_limits": "BYOK: depends on provider. 30 trial: no explicit rate limit beyond total cap.",
+      "notes": "Free plan is BYOK-based. 30 free interactions via CodeGPT credits without API key. After trial, must BYOK or buy credits."
+    },
+    "status": "active",
+    "rating": 3.8,
+    "tags": [
+      "codegpt",
+      "ai-coding",
+      "vs-code",
+      "autocomplete",
+      "chat",
+      "multi-model"
+    ],
+    "notes": "2.4M+ VS Code installs. Supports 20+ providers (OpenAI, Anthropic, Google, Mistral, Groq, DeepSeek, Azure, Bedrock, Nvidia, Cohere, Fireworks, Perplexity, Cerebras, Grok) and local (Ollama, LM Studio). Autocomplete is a paid add-on $8/mo. Extension ID: DanielSanMedium.dscodegpt.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Aider",
+    "url": "https://aider.chat",
+    "category": "byok_extension",
+    "sub_category": "ai-pair-programmer",
+    "description": "Open source AI pair programming CLI tool that connects to LLMs to edit code directly in git repos with automatic commits. Created by Paul Gauthier.",
+    "screenshot": "",
+    "models_count": 50,
+    "top_models": [
+      "Ollama/local models (free, local)",
+      "Gemini 2.5 Pro Exp (free API tier)",
+      "OpenRouter free tier models",
+      "Groq free tier models"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "refactoring",
+      "git-integration"
+    ],
+    "pricing": "free",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK)",
+      "free_requests_per_month": "unlimited (BYOK)",
+      "rate_limits": "Depends on user's API key or free tier provider limits. No built-in limits.",
+      "notes": "100% BYOK. Free and open source (Apache 2.0). No paid tiers. Can be $0 using local models (Ollama) or free API tiers (Gemini Exp, OpenRouter free, Groq free)."
+    },
+    "status": "active",
+    "rating": 5,
+    "tags": [
+      "byok",
+      "open-source",
+      "cli",
+      "git",
+      "ai-pair-programmer",
+      "python",
+      "terminal"
+    ],
+    "notes": "46k+ GitHub stars. 6.8M+ PyPI installs. Python-based (pip/pipx/homebrew). Deepest git integration — every change auto-committed with descriptive messages. Repo-map for codebase context. 100+ language support via tree-sitter. Features: voice-to-code, image/web page context, lint/test auto-fix loop, architect/ask/code modes. Aider Polyglot leaderboard is de facto coding model benchmark.",
+    "last_verified": "2026-06-10"
+  },
+  {
+    "name": "Goose",
+    "url": "https://github.com/aaif-goose/goose",
+    "category": "byok_extension",
+    "sub_category": "ai-coding-agent",
+    "description": "Open-source extensible AI agent originally by Block (Square), now under Linux Foundation's AAIF. Desktop app, CLI, and API with native MCP and 15+ LLM providers.",
+    "screenshot": "",
+    "models_count": 15,
+    "top_models": [
+      "Ollama (local, free)",
+      "Google Gemini (free tier)",
+      "Groq (free tier)",
+      "LM Studio (local, free)"
+    ],
+    "capabilities": [
+      "code-generation",
+      "chat",
+      "agent",
+      "terminal",
+      "file-editing",
+      "code-review",
+      "test-generation",
+      "mcp-support"
+    ],
+    "pricing": "free",
+    "login_type": "api_key",
+    "referrals": "no",
+    "free_tier_limits": {
+      "free_requests_per_day": "unlimited (BYOK — no Goose-imposed limits)",
+      "free_requests_per_month": "unlimited (BYOK — no Goose-imposed limits)",
+      "rate_limits": "None (depends on chosen provider). No Goose-imposed limits.",
+      "notes": "Goose itself is free and open source. Only pay for LLM API usage. Use local models via Ollama for completely free and offline."
+    },
+    "status": "active",
+    "rating": 4,
+    "tags": [
+      "byok",
+      "open-source",
+      "agent",
+      "ai-coding",
+      "mcp"
+    ],
+    "notes": "Originally by Block (Square), open-sourced Jan 2025 (Apache 2.0). Donated to Linux Foundation's AAIF Dec 2025. Repo: aaif-goose/goose. 48.7k+ GitHub stars, 500+ contributors, 137 releases (v1.37.0). Rust + TypeScript UI. Desktop (macOS/Linux/Windows), CLI, API. 70+ MCP extensions, 15+ LLM providers. Features: subagents, recipes (YAML workflows), MCP Apps, prompt injection detection, sandbox mode.",
+    "last_verified": "2026-06-10"
+  }
+]
